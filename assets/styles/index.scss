@@ -1,0 +1,245 @@
+@import "_reset";
+@import "_fonts/fonts";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  font-size: calc(100vw / 1920 * 10);
+
+  @include r($lg) {
+    -webkit-font-smoothing: auto;
+  }
+
+  @include r($md) {
+    font-size: 10px;
+  }
+
+  @include r(360) {
+    font-size: 8px;
+  }
+}
+
+body {
+  font-family: $primaryFont;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: var(--text-color);
+  background: var(--white);
+  -webkit-font-smoothing: antialiased;
+}
+
+footer {
+  flex-shrink: 0;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main {
+  flex: 1 0 auto;
+}
+
+.container {
+  width: 100%;
+  max-width: 192rem;
+  padding-right: $padding-right-l;
+  padding-left: $padding-left-l;
+  margin: 0 auto;
+
+  & .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  @include r($md) {
+    padding-right: $padding-right-md;
+    padding-left: $padding-left-md;
+  }
+
+  @include r($sm) {
+    padding-right: $padding-right-sm;
+    padding-left: $padding-left-sm;
+  }
+}
+
+.container-fluid {
+  width: 100%;
+  padding-right: 4.8rem;
+  padding-left: 4.8rem;
+
+  @include r($md) {
+    padding-right: 3.2rem;
+    padding-left: 3.2rem;
+  }
+
+  @include r($sm) {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+}
+
+.nuxt-icon {
+  svg {
+    display: block;
+    margin-bottom: 0 !important;
+  }
+}
+
+// Visually hide an element, but leave it available for screen readers
+.screen-reader {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.swiper-lazy-preloader {
+  border-color: var(--accent-color);
+  border-top-color: transparent;
+}
+
+[class*="-controls__control"] {
+  top: 23rem !important;
+  right: 4.5rem !important;
+  @include r($md) {
+    top: 15rem !important;
+  }
+}
+
+[class*="-zoom__plus"],
+[class*="-zoom__minus"] {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 4.8rem !important;
+  height: 4.8rem !important;
+  border-radius: 50% !important;
+  padding: 0 !important;
+  background: white !important;
+  background-size: cover !important;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.24) !important;
+  transition: background-color 0.4s ease;
+  &:before {
+    position: absolute;
+    content: "";
+    width: 1.2rem;
+    height: 0.2rem;
+    background: #000000;
+  }
+  &:hover {
+    background: var(--green-500) !important;
+    &:after,
+    &:before {
+      background-color: #ffffff;
+    }
+  }
+  @media (max-width: 1024px) {
+  }
+}
+[class*="-zoom__minus"] {
+  top: 5.5rem !important;
+  background-size: cover !important;
+  @media (max-width: 767px) {
+  }
+}
+
+[class*="-zoom__plus"] {
+  &:after {
+    position: absolute;
+    content: "";
+    height: 1.2rem;
+    width: 0.2rem;
+    background: #000000;
+  }
+}
+
+[class*="-zoom__icon"] {
+  display: none !important;
+}
+
+// transition -- slide fade
+.slide-fade-enter-active {
+  transition: all 0.3s ease;
+}
+
+.slide-fade-enter {
+  transition: all 0.3s ease;
+  transform: translateY(-0.7rem);
+}
+
+.slide-fade-leave-active {
+  transition: all 0.3s ease;
+}
+
+.slide-fade-leave-to,
+.slide-fade-enter-from {
+  transform: translateY(-100%);
+  opacity: 0;
+}
+
+.hide-scrollbar {
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+.tippy-box[data-theme~="custom"] {
+  // height: 100px;
+  // padding: 20px;
+  width: fit-content;
+  background-color: white;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 120%;
+  color: #4a4a4a;
+  border-radius: 7px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.24);
+
+  .tippy-content {
+    padding: 3rem;
+    display: flex;
+    align-items: center;
+    gap: 1.7rem;
+
+    svg {
+      flex-shrink: 0;
+      max-width: 3rem;
+      max-height: 3rem;
+    }
+  }
+
+  .tippy-arrow {
+    display: none;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 6.3rem;
+    width: 4rem;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+    background-repeat: no-repeat;
+    background-image: url("data:image/svg+xml, %3Csvg class='svg-strelka'   viewBox='174.505 88.155 49.303 12.094' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2 7C2 3.68629 4.68629 1 8 1H391C394.314 1 397 3.68629 397 7V82C397 85.3137 394.314 88 391 88H226.151C219.261 88 212.581 90.3717 207.233 94.7166L203.284 97.9259C201.079 99.7169 197.921 99.7169 195.716 97.9259L191.767 94.7166C186.419 90.3717 179.739 88 172.849 88H8C4.68629 88 2 85.3137 2 82V7Z' fill='%23ffffff'/%3E%3C/svg%3E");
+  }
+}

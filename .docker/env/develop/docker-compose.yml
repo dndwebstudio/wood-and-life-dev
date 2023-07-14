@@ -1,0 +1,41 @@
+version: '3'
+
+networks:
+  web:
+    external: true
+  internal:
+    external: false
+
+services:
+  nuxtjs:
+    container_name: wespot.$HOST.nuxt
+    image: $IMAGE
+    working_dir: /var/www/html
+    restart: always
+    tty: true
+    ports:
+      - 3000
+    labels:
+      - "traefik.enable=false"
+    networks:
+      - internal
+
+  nginx:
+    container_name: wespot.$HOST.nginx
+    image: nginx:latest
+    restart: always
+    tty: true
+    depends_on:
+      - nuxtjs
+    volumes:
+      - ${PWD}/config/nginx.conf:/etc/nginx/conf.d/default.conf
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.${ROUTER}.rule=Host(`${HOST}.wespot.ru`)"
+      - "traefik.http.routers.${ROUTER}.entrypoints=websecure"
+      - "traefik.http.routers.${ROUTER}.tls.certresolver=myresolver"
+      - "traefik.docker.network=web"
+    networks:
+      - web
+      - internal
+

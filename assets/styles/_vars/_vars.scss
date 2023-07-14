@@ -1,0 +1,55 @@
+:root {
+  --gray-100: #F5F5F5;
+  --gray-200: #E3E3E3;
+  --gray-300: #D9D9D9;
+  --gray-400: #838383;
+  --gray-500: #4A4A4A;
+  --gray-600: #333333;
+  --gray-700: #292929;
+  --gray-800: #1C1C1C;
+
+  --white-90: #ECECEC;
+  --white-80: #D9D9D9;
+  --white-40: #ffffff66;
+  --white-20: #676767;
+  --white-10: #545454;
+
+  --green-100: #D1F5DA;
+  --green-400: #009767;
+  --green-500: #007550;
+  --green-600: #006143;
+
+  --accent-color: var(--green-400);
+  --accent-state-color: '';
+
+  --accent-secondary-color: '';
+  --accent-secondary-state-color: '';
+
+  --bg-color: var(--gray-800);
+  --text-color: #000;
+}
+
+$primaryFont: "Muller", "Helvetica Neue", sans-serif;
+
+$accent-color: #009767;
+
+// [ CONTAINER PADDING ]
+$padding-right-l: 16rem;
+$padding-left-l: 16rem;
+
+$padding-right-md: 3.6rem;
+$padding-left-md: 3.6rem;
+
+$padding-right-sm: 1.2rem;
+$padding-left-sm: 1.2rem;
+
+// [ HEADER HEIGHT ]
+$header-height: 11.5rem;
+$header-height-md: 6.8rem;
+$header-height-sm: 5.6rem;
+
+// [ BREAKPOINTS ]
+$xs: 575;
+$sm: 767;
+$md: 991;
+$lg: 1199;
