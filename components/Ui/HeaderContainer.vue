@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-      <h2 class="pt-48 pb-48">{{ title }}</h2>
+      <h2 :class="props.classString">{{ title }}</h2>
     </div>
 </template>
 
@@ -9,9 +9,11 @@ import { ref } from "vue";
 
 interface Props {
     title: string;
+    classString: string;
 }
 
 const props = withDefaults(defineProps<Props>(), {
     title: "",
+    classString: "pt-48 pb-48"
 });
 </script>
