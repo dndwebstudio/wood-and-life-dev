@@ -23,26 +23,34 @@
           <h2 class="section-form__title mt-12 mb-16 text-[#fff]" v-html="data.title"></h2>
           <p class="text-[#fff] text-4xl" v-html="data.desc"></p>
         </div>
-        <ModuleCalc :calculators="data.calculators"/>
+        <ModuleCalcAlt :calculators="data.calculators"/>
       </div>
     </div>
   </section>
 </template>
 
 <script setup lang="ts">
-import ModuleCalc from "~/components/Module/ModuleCalc.vue";
+import ModuleCalcAlt from "~/components/Module/ModulCalcAlt.vue";
 
 interface Calculator {
-  icon?: string;
   title: string;
   desc?: string;
-  img: string;
+  img?: string;
   section?: string;
+  active: boolean;
+}
+
+interface Quiz {
+  title: string;
+  type: string;
+  content: Calculator[];
 }
 
 interface Data {
+  desc?: string;
+  section?: string;
   title?: string;
-  calculators: Calculator[];
+  calculators: Quiz[];
 }
 
 interface Props {

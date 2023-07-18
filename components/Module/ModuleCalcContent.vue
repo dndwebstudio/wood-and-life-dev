@@ -15,17 +15,16 @@
 </template>
 
 <script setup lang="ts">
-interface Content {
+interface Calculator {
   icon?: string;
   title: string;
   desc?: string;
   img: string;
-  active: string;
   section?: string;
 }
 
 interface Props {
-  contents: Content[];
+  contents: Calculator[];
 }
 
 defineProps<Props>();

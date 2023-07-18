@@ -50,8 +50,13 @@ interface Calculator {
   section?: string;
 }
 
+interface Quiz {
+  title: string,
+  content: Calculator[]
+}
+
 interface Props {
-  calculators: Calculator[];
+  calculators: Quiz[];
 }
 
 defineProps<Props>();

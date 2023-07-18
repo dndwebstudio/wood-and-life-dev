@@ -1,156 +1,16 @@
 <template>
   <div>
-    <div class="container">
-      <h2 class="pt-48 pb-48">Блог</h2>
-    </div>
-    <section class="pb-48">
-      <div class="container">
-        <div class="grid grid-cols-4 gap-16">
-          <div class="">
-            <div>
-              <img class="w-full mb-8" src="/img/factory/1.png" alt="">
-            </div>
-            <div class="font-medium text-5xl mb-8">
-              Что такое модульная технология?
-            </div>
-            <div class="flex gap-4">
-              <span>Читать</span>
-              <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M2.33203 4.22241L2.33203 6.22241C2.33203 8.43155 4.12289 10.2224 6.33203 10.2224L17.332 10.2224" stroke="#838383" stroke-width="2"/>
-                <path d="M13.332 5.22241L18.332 10.2224L13.332 15.2224" stroke="#838383" stroke-width="2"/>
-              </svg>
-
-            </div>
-          </div>
-          <div class="">
-            <div>
-              <img class="w-full mb-8" src="/img/factory/1.png" alt="">
-            </div>
-            <div class="font-medium text-5xl mb-8">
-              Что такое модульная технология?
-            </div>
-            <div class="flex gap-4">
-              <span>Читать</span>
-              <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M2.33203 4.22241L2.33203 6.22241C2.33203 8.43155 4.12289 10.2224 6.33203 10.2224L17.332 10.2224" stroke="#838383" stroke-width="2"/>
-                <path d="M13.332 5.22241L18.332 10.2224L13.332 15.2224" stroke="#838383" stroke-width="2"/>
-              </svg>
-
-            </div>
-          </div>
-          <div class="">
-            <div>
-              <img class="w-full mb-8" src="/img/factory/1.png" alt="">
-            </div>
-            <div class="font-medium text-5xl mb-8">
-              Что такое модульная технология?
-            </div>
-            <div class="flex gap-4">
-              <span>Читать</span>
-              <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M2.33203 4.22241L2.33203 6.22241C2.33203 8.43155 4.12289 10.2224 6.33203 10.2224L17.332 10.2224" stroke="#838383" stroke-width="2"/>
-                <path d="M13.332 5.22241L18.332 10.2224L13.332 15.2224" stroke="#838383" stroke-width="2"/>
-              </svg>
-
-            </div>
-          </div>
-          <div class="">
-            <div>
-              <img class="w-full mb-8" src="/img/factory/1.png" alt="">
-            </div>
-            <div class="font-medium text-5xl mb-8">
-              Что такое модульная технология?
-            </div>
-            <div class="flex gap-4">
-              <span>Читать</span>
-              <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M2.33203 4.22241L2.33203 6.22241C2.33203 8.43155 4.12289 10.2224 6.33203 10.2224L17.332 10.2224" stroke="#838383" stroke-width="2"/>
-                <path d="M13.332 5.22241L18.332 10.2224L13.332 15.2224" stroke="#838383" stroke-width="2"/>
-              </svg>
-
-            </div>
-          </div>
-          <div class="">
-            <div>
-              <img class="w-full mb-8" src="/img/factory/1.png" alt="">
-            </div>
-            <div class="font-medium text-5xl mb-8">
-              Что такое модульная технология?
-            </div>
-            <div class="flex gap-4">
-              <span>Читать</span>
-              <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M2.33203 4.22241L2.33203 6.22241C2.33203 8.43155 4.12289 10.2224 6.33203 10.2224L17.332 10.2224" stroke="#838383" stroke-width="2"/>
-                <path d="M13.332 5.22241L18.332 10.2224L13.332 15.2224" stroke="#838383" stroke-width="2"/>
-              </svg>
-
-            </div>
-          </div>
-          <div class="">
-            <div>
-              <img class="w-full mb-8" src="/img/factory/1.png" alt="">
-            </div>
-            <div class="font-medium text-5xl mb-8">
-              Что такое модульная технология?
-            </div>
-            <div class="flex gap-4">
-              <span>Читать</span>
-              <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M2.33203 4.22241L2.33203 6.22241C2.33203 8.43155 4.12289 10.2224 6.33203 10.2224L17.332 10.2224" stroke="#838383" stroke-width="2"/>
-                <path d="M13.332 5.22241L18.332 10.2224L13.332 15.2224" stroke="#838383" stroke-width="2"/>
-              </svg>
-
-            </div>
-          </div>
-          <div class="">
-            <div>
-              <img class="w-full mb-8" src="/img/factory/1.png" alt="">
-            </div>
-            <div class="font-medium text-5xl mb-8">
-              Что такое модульная технология?
-            </div>
-            <div class="flex gap-4">
-              <span>Читать</span>
-              <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M2.33203 4.22241L2.33203 6.22241C2.33203 8.43155 4.12289 10.2224 6.33203 10.2224L17.332 10.2224" stroke="#838383" stroke-width="2"/>
-                <path d="M13.332 5.22241L18.332 10.2224L13.332 15.2224" stroke="#838383" stroke-width="2"/>
-              </svg>
-
-            </div>
-          </div>
-          <div class="">
-            <div>
-              <img class="w-full mb-8" src="/img/factory/1.png" alt="">
-            </div>
-            <div class="font-medium text-5xl mb-8">
-              Что такое модульная технология?
-            </div>
-            <div class="flex gap-4">
-              <span>Читать</span>
-              <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M2.33203 4.22241L2.33203 6.22241C2.33203 8.43155 4.12289 10.2224 6.33203 10.2224L17.332 10.2224" stroke="#838383" stroke-width="2"/>
-                <path d="M13.332 5.22241L18.332 10.2224L13.332 15.2224" stroke="#838383" stroke-width="2"/>
-              </svg>
-            </div>
-          </div>
-        </div>
-        <div class="pagination flex gap-20 font-medium mt-48 text-4xl">
-          <span class="text-[#009767] border-b border-[#009767]">1</span>
-          <span>2</span>
-          <span>3</span>
-          <span>4</span>
-          <span>5</span>
-          <span>. . .</span>
-          <span>12</span>
-        </div>
-      </div>
-    </section>
+    <HeaderContainer :title="'Блог'"/>
+    <SectionBlog/>
     <SectionChoose :data="choose" />
   </div>
 </template>
 
 <script setup lang="ts">
 import { ref } from "vue";
+
+import HeaderContainer from "~/components/Ui/HeaderContainer.vue";
+import SectionBlog from "~/components/Section/SectionBlog.vue";
 
 const choose = ref ({
   title: "Выберите, что хотите построить",

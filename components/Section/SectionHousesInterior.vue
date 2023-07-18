@@ -6,15 +6,13 @@
         <div class="w-full">
           <h2 class="section-form__title mt-12 mb-24" v-html="data.title"></h2>
         </div>
-        <div class="credit__slider flex gap-4 w-full mb-36">
-          <img class="w-full" src="/img/partners/1.png" alt="">
-          <img class="w-full" src="/img/partners/2.png" alt="">
-          <img class="w-full" src="/img/partners/3.png" alt="">
-          <img class="w-full" src="/img/partners/4.png" alt="">
-          <img class="w-full" src="/img/partners/5.png" alt="">
-          <img class="w-full" src="/img/partners/6.png" alt="">
-          <img class="w-full" src="/img/partners/7.png" alt="">
-        </div>
+        <swiper-container ref="ourPartnersSlider" init="false" class="credit__slider flex gap-4 w-full mb-36">
+          <swiper-slide
+            v-for="(slide, idx) in data.partnersList"
+            :key="idx" class="w-full">
+            <img class="w-full" :src="slide.url" alt="">
+          </swiper-slide>
+        </swiper-container>
         <swiper-container ref="heroSlider" init="false" class="home-hero-slider">
           <swiper-slide
             v-for="(slide, idx) in data.sliders"
@@ -44,6 +42,7 @@ import useTooltips from '@/mixins/tooltipsMixin';
 
 const { applyTooltips } = useTooltips();
 const heroSlider = ref();
+const ourPartnersSlider = ref();
 
 interface Slider {
   title: string;
@@ -53,10 +52,15 @@ interface Slider {
   modalData: object;
 }
 
+interface PartnersSlides {
+  url: string
+}
+
 interface Data {
   section?: string;
   title?: string;
   sliders: Slider[];
+  partnersList: PartnersSlides[];
 }
 
 interface Props {
@@ -75,6 +79,35 @@ onMounted(() => {
       clickable: true,
     },
   };
+  const paramsPartners = {
+    modules: [],
+    breakpoints: {
+      500: {
+        slidesPerView: 2,
+        spaceBetween: 8,
+      },
+      700: {
+        slidesPerView: 3,
+        spaceBetween: 8,
+      },
+      900: {
+        slidesPerView: 4,
+        spaceBetween: 8,
+      },
+      1200: {
+        slidesPerView: 5,
+        spaceBetween: 8,
+      },
+      1600: {
+        slidesPerView: 6,
+        spaceBetween: 8,
+      },
+      1900: {
+        slidesPerView: 7,
+        spaceBetween: 8,
+      },
+    },
+  };
   nextTick(() => {
 
     applyTooltips();
@@ -83,6 +116,8 @@ onMounted(() => {
 
   Object.assign(heroSlider.value, params);
   heroSlider.value.initialize();
+  Object.assign(ourPartnersSlider.value, paramsPartners);
+  ourPartnersSlider.value.initialize();
 
 });
 

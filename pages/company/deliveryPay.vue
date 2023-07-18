@@ -1,8 +1,6 @@
 <template>
   <div>
-    <div class="container">
-      <h2 class="pt-48 pb-48">Доставка и оплата</h2>
-    </div>
+    <HeaderContainer :title="'Доставка и оплата'"/>
     <section class="pb-48">
       <div class="container">
         <div class="grid grid-cols-3">
@@ -63,6 +61,7 @@ name: "deliveryPay"
 }
 </script>
 
-<style scoped>
+<style setup lang="ts">
+import HeaderContainer from "~/components/Ui/HeaderContainer.vue";
 
 </style>

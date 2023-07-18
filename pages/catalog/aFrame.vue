@@ -209,27 +209,198 @@ const info = ref({
   desc: "И получите точный расчет стоимости с учетом доставки до вашего региона",
   calculators: [{
     title: "Выберите площадь дома",
+    type: "img",
     content: [
       {
         title: "до 40 м2",
         img: "/img/modular-houses/calc-img-1.png",
         icon: "quiz-check-enable",
-        active: "Y",
+        active: true
       },
       {
         title: "40 - 56 м2",
         img: "/img/modular-houses/calc-img-2.png",
         icon: "quiz-check-disable",
+        active: false
       },
       {
         title: "56 - 70 м2",
         img: "/img/modular-houses/calc-img-3.png",
         icon: "quiz-check-disable",
+        active: false
       },
       {
         title: "больше 70 м2",
         img: "/img/modular-houses/calc-img-3.png",
         icon: "quiz-check-disable",
+        active: false
+      },
+      {
+        title: "больше 70 м2",
+        img: "/img/modular-houses/calc-img-3.png",
+        icon: "quiz-check-disable",
+        active: false
+      }
+    ],
+  },
+  {
+    title: "Выберите площадь дома",
+    type: "text",
+    content: [
+      {
+        title: "до 40 м2",
+        desc: "Какой-то под-текст",
+        img: "/img/modular-houses/calc-img-1.png",
+        icon: "quiz-check-enable",
+        active: true
+      },
+      {
+        title: "40 - 56 м2",
+        desc: "Какой-то под-текст",
+        img: "/img/modular-houses/calc-img-2.png",
+        icon: "quiz-check-disable",
+        active: false
+      },
+      {
+        title: "56 - 70 м2",
+        desc: "Какой-то под-текст",
+        img: "/img/modular-houses/calc-img-3.png",
+        icon: "quiz-check-disable",
+        active: false
+      },
+      {
+        title: "больше 70 м2",
+        desc: "Какой-то под-текст",
+        img: "/img/modular-houses/calc-img-3.png",
+        icon: "quiz-check-disable",
+        active: false
+      }
+    ],
+  },{
+    title: "Выберите площадь дома",
+    type: "img",
+    content: [
+      {
+        title: "до 40 м2",
+        img: "/img/modular-houses/calc-img-1.png",
+        icon: "quiz-check-enable",
+        active: true
+      },
+      {
+        title: "40 - 56 м2",
+        img: "/img/modular-houses/calc-img-2.png",
+        icon: "quiz-check-disable",
+        active: false
+      },
+      {
+        title: "56 - 70 м2",
+        img: "/img/modular-houses/calc-img-3.png",
+        icon: "quiz-check-disable",
+        active: false
+      },
+    ],
+  },
+  {
+    title: "Выберите площадь дома",
+    type: "text",
+    content: [
+      {
+        title: "до 40 м2",
+        desc: "Какой-то под-текст",
+        img: "/img/modular-houses/calc-img-1.png",
+        icon: "quiz-check-enable",
+        active: true
+      },
+      {
+        title: "40 - 56 м2",
+        desc: "Какой-то под-текст",
+        img: "/img/modular-houses/calc-img-2.png",
+        icon: "quiz-check-disable",
+        active: false
+      },
+      {
+        title: "56 - 70 м2",
+        desc: "Какой-то под-текст",
+        img: "/img/modular-houses/calc-img-3.png",
+        icon: "quiz-check-disable",
+        active: false
+      }
+    ],
+  },{
+    title: "Выберите площадь дома",
+    type: "img",
+    content: [
+      {
+        title: "до 40 м2",
+        img: "/img/modular-houses/calc-img-1.png",
+        icon: "quiz-check-enable",
+        active: true
+      },
+      {
+        title: "40 - 56 м2",
+        img: "/img/modular-houses/calc-img-2.png",
+        icon: "quiz-check-disable",
+        active: false
+      },
+      {
+        title: "56 - 70 м2",
+        img: "/img/modular-houses/calc-img-3.png",
+        icon: "quiz-check-disable",
+        active: false
+      },
+      {
+        title: "больше 70 м2",
+        img: "/img/modular-houses/calc-img-3.png",
+        icon: "quiz-check-disable",
+        active: false
+      },
+    ],
+  },
+  {
+    title: "Выберите площадь дома",
+    type: "text",
+    content: [
+      {
+        title: "до 40 м2",
+        desc: "Какой-то под-текст",
+        img: "/img/modular-houses/calc-img-1.png",
+        icon: "quiz-check-enable",
+        active: true
+      },
+      {
+        title: "40 - 56 м2",
+        desc: "Какой-то под-текст",
+        img: "/img/modular-houses/calc-img-2.png",
+        icon: "quiz-check-disable",
+        active: false
+      },
+      {
+        title: "56 - 70 м2",
+        desc: "Какой-то под-текст",
+        img: "/img/modular-houses/calc-img-3.png",
+        icon: "quiz-check-disable",
+        active: false
+      },
+      {
+        title: "больше 70 м2",
+        desc: "Какой-то под-текст",
+        img: "/img/modular-houses/calc-img-3.png",
+        icon: "quiz-check-disable",
+        active: false
+      },
+      {
+        title: "56 - 70 м2",
+        desc: "Какой-то под-текст",
+        img: "/img/modular-houses/calc-img-3.png",
+        icon: "quiz-check-disable",
+        active: false
+      },
+      {
+        title: "больше 70 м2",
+        desc: "Какой-то под-текст",
+        img: "/img/modular-houses/calc-img-3.png",
+        icon: "quiz-check-disable",
+        active: false
       }
     ],
   },
