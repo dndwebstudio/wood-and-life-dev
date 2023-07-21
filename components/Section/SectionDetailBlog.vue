@@ -1,0 +1,47 @@
+<template>
+    <div class="flex gap-24">
+        <div class="max-w-[364px] w-full">
+            <div class="font-medium mb-5">Содержание:</div>
+            <ul class="pl-5">
+                <li class="list-disc text-[#009767]" v-for="(item, ind) in descriptionPath">
+                    <a :href="'#detail-blog-description-path-'+ind" class="" v-html="item.title"></a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <div v-for="(item, ind) in descriptionPath" :key="ind" class="relative">
+                <span :id="'detail-blog-description-path-'+ind" class="absolute" style="top: -116px"></span>
+                <div class="pb-48" :class="item.addedClass" v-html="item.text"></div>
+            </div>
+            <ModuleSocialShare :url="'http://localhost:3000/company/blogDetail#detail-blog-description-path-4'" :title="'Выбираем идеальную купель для бани'"/>
+        </div>
+    </div>
+</template>
+
+<script lang="ts" setup>
+import { ref } from "vue";
+import ModuleSocialShare from "../Module/ModuleSocialShare.vue";
+interface DetailBlogDescriptionPath {
+	title: string;
+	text: string;
+	addedClass: string;
+}
+
+interface DetailBlogData {
+	descriptionPath: DetailBlogDescriptionPath[];
+}
+
+interface Props {
+    detailData: DetailBlogData;
+}
+
+let props = defineProps<Props>()
+
+let descriptionPath = ref<DetailBlogDescriptionPath[]>(props.detailData.descriptionPath)
+</script>
+
+<style>
+html{
+    scroll-behavior: smooth;
+}
+</style>

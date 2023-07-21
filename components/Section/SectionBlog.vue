@@ -28,37 +28,37 @@ const blogData = ref<BlogList>({
             title: "Название #1",
             img: "/img/factory/1.png",
             shortDescription: "",
-            url: "/blog/"
+            url: "/company/blogDetail"
         },
         {
             title: "Название #2",
             img: "/img/factory/2.png",
             shortDescription: "",
-            url: "/blog/"
+            url: "/company/blogDetail"
         },
         {
             title: "Название #3",
             img: "/img/factory/3.png",
             shortDescription: "",
-            url: "/blog/"
+            url: "/company/blogDetail"
         },
         {
             title: "Название #4",
             img: "/img/factory/4.png",
             shortDescription: "",
-            url: "/blog/"
+            url: "/company/blogDetail"
         },
         {
             title: "Название #5",
             img: "/img/factory/5.png",
             shortDescription: "",
-            url: "/blog/"
+            url: "/company/blogDetail"
         },
         {
             title: "Название #6",
             img: "/img/factory/6.png",
             shortDescription: "",
-            url: "/blog/"
+            url: "/company/blogDetail"
         },
     ]
 })
