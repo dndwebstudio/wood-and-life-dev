@@ -7,7 +7,7 @@
           :key="idx"
           class="banner-questions__avatar"
         >
-          <nuxt-img
+          <img
             :src="avatar.img"
             :alt="avatar.name"
             format="webp"

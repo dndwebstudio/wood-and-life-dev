@@ -7,7 +7,7 @@
         'project-types-slider__slide',
         { active: idx === projectIndex },
       ]" @click="$emit('updateIndex', idx)">
-        <nuxt-img 
+        <img 
         class="project-types-slider__slide-img" :src="config.type.img" :alt="config.type.name" format="webp"
           loading="lazy" />
         <span class="caps-12-16 project-types-slider__slide-title">

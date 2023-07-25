@@ -2,7 +2,7 @@
   <div class="project-additions">
     <p class="project-additions__info" v-html="data.desc"></p>
     <div class="project-additions__img">
-      <nuxt-img :src="data.img" :alt="data.alt" format="webp" loading="lazy" />
+      <img :src="data.img" :alt="data.alt" format="webp" loading="lazy" />
     </div>
   </div>
 </template>

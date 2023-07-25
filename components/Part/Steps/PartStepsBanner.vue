@@ -5,7 +5,7 @@
       {{ data.desc }}
     </p>
     <div class="steps-banner__img">
-      <nuxt-img :src="data.img" any="" format="webp" loading="lazy" />
+      <img :src="data.img" any="" format="webp" loading="lazy" />
     </div>
   </div>
 </template>

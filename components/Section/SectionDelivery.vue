@@ -13,7 +13,7 @@
           </div>
         </div>
         <div class="delivery__col delivery__col_img">
-          <nuxt-img
+          <img
             class="delivery__img"
             format="webp"
             loading="lazy"

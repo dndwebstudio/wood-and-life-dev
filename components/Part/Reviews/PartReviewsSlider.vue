@@ -6,7 +6,7 @@
         <swiper-container :ref="setReviewsPhotoRef" class="reviews-photos" init="false">
             <swiper-slide v-for="(photo, idx) in review.photos" :key="idx" class="reviews-photos__slide">
               <div class="reviews-photos__img">
-                <nuxt-img 
+                <img 
                 :src="photo.img" 
                 alt="" 
                 format="webp" 
@@ -25,7 +25,7 @@
       </div>
       <div class="reviews-slider__slide-footer">
         <div class="reviews-slider__slide-author">
-          <nuxt-img 
+          <img 
           class="reviews-slider__slide-author-avatar" :src="review.author.avatar" format="webp" loading="lazy"
             :alt="review.author.name" />
           <div class="reviews-slider__slide-author-info">

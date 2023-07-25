@@ -6,7 +6,7 @@
       class="gallery-slider__slide"
     >
       <div class="gallery-slider__slide-img">
-        <nuxt-img :src="slide.img" alt="" format="webp" loading="lazy" />
+        <img :src="slide.img" alt="" format="webp" loading="lazy" />
       </div>
       <p v-if="slide.desc" class="gallery-slider__slide-desc">
         {{ slide.desc }}

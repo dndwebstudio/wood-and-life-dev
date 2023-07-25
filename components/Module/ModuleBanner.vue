@@ -9,7 +9,7 @@
     </div>
     <div class="banner__col">
       <div class="banner__img">
-        <nuxt-img :src="data?.img" format="webp" loading="lazy" />
+        <img :src="data?.img" format="webp" loading="lazy" />
       </div>
       <UiButtonRound
         v-if="data.videoLink"

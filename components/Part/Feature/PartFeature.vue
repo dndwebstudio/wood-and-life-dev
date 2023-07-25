@@ -2,7 +2,7 @@
   <div ref="content" class="feature">
     <div class="feature__col feature__col_imgs">
       <div v-for="(img, idx) in data.imgs" :key="idx" class="feature__img">
-        <nuxt-img :src="img.img" alt="" format="webp" loading="lazy" />
+        <img :src="img.img" alt="" format="webp" loading="lazy" />
         <span v-if="img.text" class="feature__img-text">
           {{ img.text }}
         </span>

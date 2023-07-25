@@ -22,7 +22,7 @@
           </div>
         </div>
         <div class="mounting__col mounting__col_img">
-          <nuxt-img
+          <img
             class="mounting__img"
             :src="data.img"
             format="webp"

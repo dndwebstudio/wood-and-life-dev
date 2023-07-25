@@ -12,7 +12,7 @@
                 :key="idx"
                 class="complex__list-item"
               >
-                <nuxt-img
+                <img
                   class="complex__list-item-img"
                   :src="item.img"
                   :alt="item.desc"

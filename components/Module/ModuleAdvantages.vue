@@ -21,7 +21,7 @@
               <div v-if="advantage.desc" v-html="advantage.desc" class="advantage__desc" />
             </div>
             <div class="advantage__img">
-              <nuxt-img :src="advantage.img" format="webp" loading="lazy" />
+              <img :src="advantage.img" format="webp" loading="lazy" />
             </div>
           </div>
         </div>

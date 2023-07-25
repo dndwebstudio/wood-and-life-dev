@@ -13,7 +13,7 @@
         <p class="shop-item__time" v-html="shop.time" />
       </div>
       <div class="shop-item__img-block">
-        <nuxt-img :src="shop.img" format="webp" loading="lazy" />
+        <img :src="shop.img" format="webp" loading="lazy" />
       </div>
     </li>
   </ul>

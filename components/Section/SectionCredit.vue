@@ -8,7 +8,7 @@
             <div class="credit__img">
               <picture>
                 <source :srcset="data.img.imgSM" media="(max-width: 991px)" />
-                <nuxt-img :src="data.img.img" alt="" format="webp" loading="lazy" />
+                <img :src="data.img.img" alt="" format="webp" loading="lazy" />
               </picture>
             </div>
           </div>
@@ -18,7 +18,7 @@
               <div class="credit__slider-title">Банки-партнеры</div>
               <swiper-container ref="creditSlider" class="credit-slider" init="false">
                 <swiper-slide v-for="(slide, idx) in data.slides" :key="idx" class="credit-slider__slide">
-                  <nuxt-img :src="slide.img" :alt="slide.name" format="webp" loading="lazy" />
+                  <mg :src="slide.img" :alt="slide.name" format="webp" loading="lazy" />
                 </swiper-slide>
               </swiper-container>
               <UiSliderNavigation class="credit-slider__navigation" />

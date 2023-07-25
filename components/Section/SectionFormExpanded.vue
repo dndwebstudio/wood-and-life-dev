@@ -28,7 +28,7 @@
     </div>
     <picture class="section-form-expanded__img">
       <source :srcset="data?.img?.imgMd" media="(max-width: 991px)" />
-      <nuxt-img :src="data?.img?.img" alt="" format="webp" loading="lazy" />
+      <img :src="data?.img?.img" alt="" format="webp" loading="lazy" />
     </picture>
   </section>
 </template>

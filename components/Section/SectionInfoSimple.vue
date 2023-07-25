@@ -4,7 +4,7 @@
       <PartSectionName :name="data.sectionName" />
       <div class="info-simple__content">
         <div class="info-simple__col info-simple__col_left">
-          <nuxt-img
+          <img
             class="info-simple__img"
             :src="data.src"
             format="webp"

@@ -27,7 +27,7 @@
             class="section-prod__quote-text"
             v-html="item"
           />
-          <nuxt-img
+          <img
             class="section-prod_img-mobile"
             format="webp"
             loading="lazy"
@@ -36,7 +36,7 @@
           <ModuleProductionForm />
         </div>
         <div class="section-prod__img-block">
-          <nuxt-img
+          <img
             class="section-prod_img"
             format="webp"
             loading="lazy"

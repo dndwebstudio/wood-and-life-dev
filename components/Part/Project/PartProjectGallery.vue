@@ -11,7 +11,7 @@
         :key="idx"
         class="project-gallery-main__slide"
       >
-        <nuxt-img
+        <img
           :src="item.img"
           :alt="data.title"
           format="webp"
@@ -32,7 +32,7 @@
         :key="idx"
         class="project-gallery-thumbs__slide"
       >
-        <nuxt-img
+        <img
           :src="item.img"
           :alt="data.title"
           format="webp"

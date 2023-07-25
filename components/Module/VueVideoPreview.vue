@@ -5,7 +5,7 @@
       <span class="screen-reader">Закрыть</span>
     </button>
     <div class="preview-video-mini__img-block">
-      <nuxt-img :src="data.img" format="webp" loading="lazy" />
+      <img :src="data.img" format="webp" loading="lazy" />
       <div class="preview-video-mini__img-overlay"></div>
       <div class="preview-video-mini__play-block" @click="openModalVideo">
         <div class="preview-video-mini__play-icon"></div>
