@@ -3,7 +3,7 @@
     <div class="container">
       <div class="faq__wrap">
         <h2 class="h2 faq__title">Ответы на частые вопросы</h2>
-        <div class="faq__content">
+        <div class="faq__content flex-col lg:lex-row">
           <div class="faq__list">
             <PartFAQItem
               v-for="(item, idx) in data.faqs"

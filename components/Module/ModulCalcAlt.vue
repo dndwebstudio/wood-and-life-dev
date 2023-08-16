@@ -3,7 +3,7 @@
         <ModulCalcAltSteps :step="currentStep" :maxStep="maxStep"/>
         <div class="text-6xl font-medium mb-16" v-if="quizItem">
             <div class="mb-12" v-html="quizItem.title"></div>
-            <div class="flex gap-12" v-if="quizItem.type == 'img'">
+            <div class="flex flex-col lg:flex-row gap-12" v-if="quizItem.type == 'img'">
                 <div class="relative cursor-pointer w-full" v-for="(content, ind) in quizItem.content" :key="ind" @click="changeActiveElementQuiz(ind)">
                     <nuxt-icon v-if="content.active" class="calc__icon" :name="'quiz-check-enable'" filled />
                     <nuxt-icon v-else class="calc__icon" :name="'quiz-check-disable'" filled />

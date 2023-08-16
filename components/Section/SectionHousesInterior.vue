@@ -6,7 +6,7 @@
         <div class="w-full">
           <h2 class="section-form__title mt-12 mb-24" v-html="data.title"></h2>
         </div>
-        <swiper-container ref="ourPartnersSlider" init="false" class="credit__slider flex gap-4 w-full mb-36">
+        <swiper-container v-if="slide && slide.length > 0" ref="ourPartnersSlider" init="false" class="credit__slider flex gap-4 w-full mb-36">
           <swiper-slide
             v-for="(slide, idx) in data.partnersList"
             :key="idx" class="w-full">

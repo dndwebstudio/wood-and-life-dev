@@ -56,7 +56,7 @@ interface Slide {
 
 interface Data {
   complexList: any[];
-  slides: Slide[];
+  slides?: Slide[];
 }
 
 interface Props {

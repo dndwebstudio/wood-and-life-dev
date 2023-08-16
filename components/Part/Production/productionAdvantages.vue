@@ -2,7 +2,7 @@
   <div class="section-prod_advantages-block">
     <swiper-container
         ref="advantages"
-        class="section-prod__advantages-list"
+        class="section-prod__advantages-list !pb-0 lg:pb-20 mb-0 lg:mb-48"
         init="false"
     >
       <swiper-slide class="section-prod__advantages-item">

@@ -11,7 +11,7 @@
                     <div :class="item.active ? 'border-b border-[#007550] text-[#007550] inline-block' : 'inline-block'">{{ item.title }}</div>
                 </swiper-slide>
             </swiper-container>
-            <div class="grid grid-cols-4 gap-16">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16">
                 <div class="shadow" v-for="(item, ind) in activePortfolio" :key="ind">
                     <div>
                         <img class="w-full" :src="item.img" alt="">

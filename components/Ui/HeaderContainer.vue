@@ -14,6 +14,6 @@ interface Props {
 
 const props = withDefaults(defineProps<Props>(), {
     title: "",
-    classString: "pt-48 pb-48"
+    classString: "pt-20 pb-20 lg:pt-48 lg:pb-48"
 });
 </script>

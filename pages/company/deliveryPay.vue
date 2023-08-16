@@ -1,6 +1,6 @@
 <template>
   <div>
-		<HeaderContainer :title="'Доставка и оплата'" :classString="'text-9xl pt-48 pb-48'" />
+		<HeaderContainer :title="'Доставка и оплата'" :classString="'text-9xl pt-20 pb-20 lg:pt-48 lg:pb-48'" />
     <SectionDeliveryPay/>
     <SectionChoose :data="choose" />
 

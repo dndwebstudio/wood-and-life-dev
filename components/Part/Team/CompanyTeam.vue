@@ -1,9 +1,9 @@
 <template>
-  <div class="pt-48 pb-48 team-section">
+  <div class="pt-48 pb-48 team-section" v-if="data.title">
     <div class="container">
       <h2 class="mb-6" v-html="data.title"></h2>
       <p class="text-4xl font-medium mb-24" v-html="data.desc"></p>
-      <div class="flex gap-16">
+      <div class="flex gap-16 flex-col lg:flex-row">
         <div class="relative" v-for="(el, idx) in data.list" :key="idx">
           <img class="w-full" :src="el.img" alt="">
           <div class="absolute inset-12 flex flex-col items-start justify-end  text-[#fff]">

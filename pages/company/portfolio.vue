@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<HeaderContainer :title="'Выполненные проекты'" :classString="'pt-48'" />
+		<HeaderContainer :title="'Выполненные проекты'" :classString="'pt-20 lg:pt-48'" />
 		<SectionProduction id="production" :data="productionData" />
 		<SectionPortfolio :portfolio="portfolioData" />
 		<SectionChoose :data="choose" />

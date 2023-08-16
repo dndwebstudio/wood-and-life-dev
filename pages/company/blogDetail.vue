@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<HeaderContainer :title="blogTitle" :classString="'text-9xl pt-48 pb-48'" />
+		<HeaderContainer :title="blogTitle" :classString="'text-9xl pt-20 pb-20 lg:pt-48 lg:pb-48'" />
 		<section class="">
 			<div class="container">
 				<SectionDetailBlog :detailData="deatilData" />

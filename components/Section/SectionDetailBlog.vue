@@ -1,6 +1,6 @@
 <template>
-    <div class="flex gap-24">
-        <div class="max-w-[364px] w-full">
+    <div class="lex gap-24 flex-col lg:flex-row">
+        <div class="mb-16 lg:max-w-[364px] w-full">
             <div class="font-medium mb-5">Содержание:</div>
             <ul class="pl-5">
                 <li class="list-disc text-[#009767]" v-for="(item, ind) in descriptionPath">

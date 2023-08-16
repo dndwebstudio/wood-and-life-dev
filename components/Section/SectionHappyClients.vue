@@ -1,7 +1,7 @@
 <template>
     <section class="global">
       <div class="container">
-        <div class="flex gap-16 items-center">
+        <div class="flex gap-16 flex-col-reverse lg:flex-row items-center">
           <img src="/img/global/map.png" alt="">
           <div class="flex flex-col">
             <img class="mb-16" src="/img/global/logo.png" alt="">

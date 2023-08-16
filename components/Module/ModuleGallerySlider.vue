@@ -1,5 +1,5 @@
 <template>
-  <swiper-container ref="slider" class="gallery-slider" init="false">
+  <swiper-container v-if="slide && slide.length > 0" ref="slider" class="gallery-slider" init="false">
     <swiper-slide
       v-for="(slide, idx) in slides"
       :key="idx"

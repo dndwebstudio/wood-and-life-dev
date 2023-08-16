@@ -2,7 +2,7 @@
     <section class="">
         <div class="container">
             <div class="grid grid-cols-3 gap-16 pb-48">
-                <div class="grid col-span-2">
+                <div class="grid col-span-3 lg:col-span-2">
                     <h4 class="mb-12 text-8xl">Оплата</h4>
                     <div class="text-3xl mb-12">
                         <div class="font-medium mb-6">Наличный расчет</div>
@@ -46,7 +46,7 @@
                         </span>
                     </button>
                 </div>
-                <div class="col-span-1">
+                <div class="col-span-3 lg:col-span-1">
                     <div class="text-5xl font-medium mb-12">Работаем по договору <br />
                         с предоплатой от 10 000 руб.</div>
                     <div class="flex">
@@ -63,7 +63,7 @@
                 </div>
             </div>
             <div class="grid grid-cols-3 gap-16 pb-48">
-                <div class="grid col-span-2">
+                <div class="grid col-span-3 lg:col-span-2">
                     <h4 class="mb-12 text-8xl">Доставка</h4>
                     <div class="text-3xl mb-12">
                         <p>
@@ -81,7 +81,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-span-1">
+                <div class="col-span-3 lg:col-span-1">
                     <div class="text-5xl font-medium mb-12">Доставляем своим
                         транспортом <span class="text-[#009767]">дешевле, чем конкуренты</span></div>
                     <div class="flex">
@@ -96,7 +96,7 @@
                     </div>
                 </div>
             </div>
-            <div class="flex">
+            <div class="flex flex-col lg:flex-row mb-20">
                 <img class="w-full max-w-[776px]" src="/img/delivery/banner.png" alt="">
                 <div class="mt-32">
                     <div class="text-5xl font-medium mb-12">Меня зовут Анна, я руководитель отдела продаж <br />Wood and
@@ -123,7 +123,7 @@
                     </svg>
                     <span>Отвечу на ваши вопросы</span>
                 </div>
-                <div class="text-8xl mt-16 mb-16">
+                <div class="text-4xl lg:text-8xl mt-16 mb-16">
                     <a href="tel:89000001122">8 (900) 000-11-22</a>
                 </div>
                 <button class="!py-6 !px-14 btn btn_transparent" type="button"

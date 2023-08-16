@@ -1,7 +1,7 @@
 <template>
-    <section class="pb-48 pt-48">
+    <section class="pb-20 pt-20 lg:pb-48 lg:pt-48">
         <div class="container">
-            <div class="flex justify-between">
+            <div class="flex justify-between flex-col lg:flex-row">
                 <div class="flex flex-col gap-5 w-full max-w-[528px] ">
                     <a class="text-6xl text-[#009767] font-medium" href="tel:88006007214">8 (800) 600-72-14</a>
                     <a class="text-6xl text-[#009767] font-medium" href="tel:89993332853">8 (999) 333-28-53</a>

@@ -2,7 +2,7 @@
   <section class="pt-48 pb-48 bg-[url('/img/modular-houses/bg-green.png')] bg-cover">
     <div class="container">
       <div data-v-11a8998c=""  class="caps-1 section-name" v-html="data.section"></div>
-      <div class="grid grid-cols-6">
+      <div class="grid lg:grid-cols-6">
         <div class="w-full col-span-2">
           <svg width="72" height="73" viewBox="0 0 72 73" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g filter="url(#filter0_b_806_18637)">
@@ -21,7 +21,7 @@
             </defs>
           </svg>
           <h2 class="section-form__title mt-12 mb-16 text-[#fff]" v-html="data.title"></h2>
-          <p class="text-[#fff] text-4xl" v-html="data.desc"></p>
+          <p class="text-[#fff] text-4xl mb-12 lg:mb-0" v-html="data.desc"></p>
         </div>
         <ModuleCalcAlt :calculators="data.calculators"/>
       </div>
