@@ -46,8 +46,10 @@ onMounted(() => {
     },
   };
 
-  Object.assign(slider.value, params);
-  slider.value.initialize();
+  if(slider.value){
+    Object.assign(slider.value, params);
+    slider.value.initialize();
+  }
 });
 </script>
 

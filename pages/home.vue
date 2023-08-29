@@ -2,185 +2,7 @@
   <div>
     <SectionHomeHero />
     <SectionAdvantages :data="advantagesData1" />
-    <div class="container py-48 bg-[#171717]">
-      <div class="caps-1 section-name">
-        Что производим
-      </div>
-      <div class="flex flex-col gap-y-20">
-        <div class="bg-[url('/img/home/img.png')] bg-cover h-[512px] p-16 text-white flex justify-between items-end">
-          <div>
-            <div class="text-9xl font-medium mb-6">Бани-бочки</div>
-            <div class="text-4xl leading-normal text-[##ffffffe6]">С парной, помывочной, комнатой отдыха и мощной печкой — <br>прогреваются за 20–30 минут</div>
-          </div>
-          <div>
-            <button class="text-4xl font-semibold flex gap-6 items-center border rounded-full border-white px-16 py-8">
-              Подробнее
-              <span class="nuxt-icon">
-                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M2 4.07812L2 6.07812C2 8.28726 3.79086 10.0781 6 10.0781L17 10.0781" stroke="white" stroke-width="2"></path>
-                <path d="M13 5.07812L18 10.0781L13 15.0781" stroke="white" stroke-width="2"></path>
-                </svg>
-              </span>
-            </button>
-          </div>
-        </div>
-        <div class="flex gap-x-16 flex-shrink">
-          <div class="basis-1/2">
-            <img class="object-contain" src="/img/home/img2.png" alt="">
-          </div>
-          <div class="basis-1/2 text-white flex flex-col justify-center">
-            <div>
-              <div class="text-9xl font-medium mb-6">А-фреймы</div>
-              <div class="text-4xl leading-normal text-[##ffffffe6] mb-20">С парной, помывочной, комнатой отдыха и мощной печкой — <br>прогреваются за 20–30 минут</div>
-            </div>
-            <div>
-              <button class="text-4xl font-semibold flex gap-6 items-center border rounded-full border-white px-16 py-8">
-                Подробнее
-                <span class="nuxt-icon">
-                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M2 4.07812L2 6.07812C2 8.28726 3.79086 10.0781 6 10.0781L17 10.0781" stroke="white" stroke-width="2"></path>
-                <path d="M13 5.07812L18 10.0781L13 15.0781" stroke="white" stroke-width="2"></path>
-                </svg>
-              </span>
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="bg-[url('/img/home/img3.png')] bg-cover h-[512px] p-16 text-white flex justify-between items-end">
-          <div>
-            <div class="text-9xl font-medium mb-6">Модульные дома</div>
-            <div class="text-4xl leading-normal text-[##ffffffe6]">Хороший вариант для тех, кто хочет через 2–3 месяца получить дом без <br>стройки на участке</div>
-          </div>
-          <div>
-            <button class="text-4xl font-semibold flex gap-6 items-center border rounded-full border-white px-16 py-8">
-              Подробнее
-              <span class="nuxt-icon">
-                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M2 4.07812L2 6.07812C2 8.28726 3.79086 10.0781 6 10.0781L17 10.0781" stroke="white" stroke-width="2"></path>
-                <path d="M13 5.07812L18 10.0781L13 15.0781" stroke="white" stroke-width="2"></path>
-                </svg>
-              </span>
-            </button>
-          </div>
-        </div>
-        <div class="flex flex-shrink gap-x-16">
-          <div class="basis-1/2">
-            <img class="object-contain" src="/img/home/img4.png" alt="">
-          </div>
-          <div class="basis-1/2 text-white flex flex-col justify-center">
-            <div>
-              <div class="text-9xl font-medium mb-6">Дачные домики из мини-бруса</div>
-              <div class="text-4xl leading-normal text-[##ffffffe6] mb-20">Идеальное решение, когда нужно сэкономить на строительстве <br>и при этом получить небольшой, крепкий и уютный домик</div>
-            </div>
-            <div>
-              <button class="text-4xl font-semibold flex gap-6 items-center border rounded-full border-white px-16 py-8">
-                Подробнее
-                <span class="nuxt-icon">
-                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M2 4.07812L2 6.07812C2 8.28726 3.79086 10.0781 6 10.0781L17 10.0781" stroke="white" stroke-width="2"></path>
-                <path d="M13 5.07812L18 10.0781L13 15.0781" stroke="white" stroke-width="2"></path>
-                </svg>
-              </span>
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="bg-[url('/img/home/img5.png')] bg-cover h-[512px] p-16 text-white flex justify-between items-end">
-          <div>
-            <div class="text-9xl font-medium mb-6">Дома из двойного бруса</div>
-            <div class="text-4xl leading-normal text-[##ffffffe6]">Теплый, «дышащий» деревянный дом, который стоит <br>
-              на 30–50% дешевле, чем дома из оцилиндрованного<br>
-              бревна и клееного бруса</div>
-          </div>
-          <div>
-            <button class="text-4xl font-semibold flex gap-6 items-center border rounded-full border-white px-16 py-8">
-              Подробнее
-              <span class="nuxt-icon">
-                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M2 4.07812L2 6.07812C2 8.28726 3.79086 10.0781 6 10.0781L17 10.0781" stroke="white" stroke-width="2"></path>
-                <path d="M13 5.07812L18 10.0781L13 15.0781" stroke="white" stroke-width="2"></path>
-                </svg>
-              </span>
-            </button>
-          </div>
-        </div>
-        <div class="flex gap-x-16 flex-shrink">
-          <div class="basis-1/2">
-            <img class="object-contain" src="/img/home/img4.png" alt="">
-          </div>
-          <div class="basis-1/2 text-white flex flex-col justify-center">
-            <div>
-              <div class="text-9xl font-medium mb-6">Каркасные бани</div>
-              <div class="text-4xl leading-normal text-[##ffffffe6] mb-20">Текст описани для каркасных бань</div>
-            </div>
-            <div>
-              <button class="text-4xl font-semibold flex gap-6 items-center border rounded-full border-white px-16 py-8">
-                Подробнее
-                <span class="nuxt-icon">
-                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M2 4.07812L2 6.07812C2 8.28726 3.79086 10.0781 6 10.0781L17 10.0781" stroke="white" stroke-width="2"></path>
-                <path d="M13 5.07812L18 10.0781L13 15.0781" stroke="white" stroke-width="2"></path>
-                </svg>
-              </span>
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="flex gap-16">
-          <div class="basis-1/3 bg-[url('/img/home/img7.png')] bg-cover h-[670px] w-full p-16 text-white flex flex-col justify-end">
-            <div class="text-7xl mb-2">
-              Беседки
-            </div>
-            <div class="mb-10 text-4xl">
-              Формы и размеры под любой запрос
-            </div>
-            <button class="w-fit text-4xl font-semibold flex gap-6 items-center border rounded-full border-white px-16 py-8">
-              Подробнее
-              <span class="nuxt-icon">
-                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M2 4.07812L2 6.07812C2 8.28726 3.79086 10.0781 6 10.0781L17 10.0781" stroke="white" stroke-width="2"></path>
-                <path d="M13 5.07812L18 10.0781L13 15.0781" stroke="white" stroke-width="2"></path>
-                </svg>
-              </span>
-            </button>
-          </div>
-          <div class="basis-1/3 bg-[url('/img/home/img8.png')] bg-cover h-[670px] w-full p-16 text-white flex flex-col justify-end">
-            <div class="text-7xl mb-2">
-              Гриль-домики
-            </div>
-            <div class="mb-10 text-4xl">
-              Вариант организации барбекю-зоны для дачи
-            </div>
-            <button class="w-fit text-4xl font-semibold flex gap-6 items-center border rounded-full border-white px-16 py-8">
-              Подробнее
-              <span class="nuxt-icon">
-                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M2 4.07812L2 6.07812C2 8.28726 3.79086 10.0781 6 10.0781L17 10.0781" stroke="white" stroke-width="2"></path>
-                <path d="M13 5.07812L18 10.0781L13 15.0781" stroke="white" stroke-width="2"></path>
-                </svg>
-              </span>
-            </button>
-          </div>
-          <div class="basis-1/3 bg-[url('/img/home/img9.png')] bg-cover h-[670px] w-full p-16 text-white flex flex-col justify-end">
-            <div class="text-7xl mb-2">
-              Хозяйственные постройки
-            </div>
-            <div class="mb-10 text-4xl">
-              Хозблоки, дровники, душ, туалет
-            </div>
-            <button class="w-fit text-4xl font-semibold flex gap-6 items-center border rounded-full border-white px-16 py-8">
-              Подробнее
-              <span class="nuxt-icon">
-                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M2 4.07812L2 6.07812C2 8.28726 3.79086 10.0781 6 10.0781L17 10.0781" stroke="white" stroke-width="2"></path>
-                <path d="M13 5.07812L18 10.0781L13 15.0781" stroke="white" stroke-width="2"></path>
-                </svg>
-              </span>
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
+    <SectionWhatProduce :items="produceData"/>
     <SectionFeatures :data="featuresData" />
     <div class="bg-[#1c1c1c]">
       <div class="container">
@@ -307,6 +129,7 @@
 import { ref } from "vue";
 import SectionHomeHero from "~/components/Section/SectionHomeHero.vue";
 import SectionAdvantages from "~/components/Section/SectionAdvantages.vue";
+import SectionWhatProduce from "~/components/Section/SectionWhatProduce.vue";
 import SectionProjects from "~/components/Section/SectionProjects.vue";
 import SectionForm from "~/components/Section/SectionForm.vue";
 import WhatsAppTab from "~/components/Part/Form/Communication/FormCommunicationTabWhatsApp.vue";
@@ -337,6 +160,54 @@ const advantagesData1 = ref({
     },
   ],
 });
+
+let produceData = ref<ProduceItem[]>([
+  {
+    title: 'Бани-бочки',
+    description: 'С парной, помывочной, комнатой отдыха и мощной печкой — <br>прогреваются за 20–30 минут',
+    img: '/img/home/img.png',
+  },
+  {
+    title: 'А-фреймы',
+    description: 'С парной, помывочной, комнатой отдыха и мощной печкой — <br>прогреваются за 20–30 минут',
+    img: '/img/home/img2.png',
+  },
+  {
+    title: 'Модульные дома',
+    description: 'Хороший вариант для тех, кто хочет через 2–3 месяца получить дом без <br>стройки на участке',
+    img: '/img/home/img3.png',
+  },
+  {
+    title: 'Дачные домики из мини-бруса',
+    description: 'Идеальное решение, когда нужно сэкономить на строительстве <br>и при этом получить небольшой, крепкий и уютный домик',
+    img: '/img/home/img4.png',
+  },
+  {
+    title: 'Дома из двойного бруса',
+    description: 'Теплый, «дышащий» деревянный дом, который стоит <br> на 30–50% дешевле, чем дома из оцилиндрованного<br> бревна и клееного бруса',
+    img: '/img/home/img5.png',
+  },
+  {
+    title: 'Каркасные бани',
+    description: 'Текст описани для каркасных бань',
+    img: '/img/home/img4.png',
+  },
+  {
+    title: 'Беседки',
+    description: 'Формы и размеры под любой запрос',
+    img: '/img/home/img7.png',
+  },
+  {
+    title: 'Гриль-домики',
+    description: 'Вариант организации барбекю-зоны для дачи',
+    img: '/img/home/img8.png',
+  },
+  {
+    title: 'Хозяйственные постройки',
+    description: 'Хозблоки, дровники, душ, туалет',
+    img: '/img/home/img9.png',
+  },
+]);
 
 const mapData = ref({
   title: "Приезжайте на наши <br/> выставочные площадки",
