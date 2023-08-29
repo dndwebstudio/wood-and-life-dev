@@ -102,31 +102,31 @@ const menu = ref([
         [
           {
             name: "О компании",
-            link: "#",
+            link: "/company/",
           },
           {
             name: "Производство",
-            link: "#",
+            link: "/company/factory/",
           },
           {
             name: "Выполненные проекты",
-            link: "#",
+            link: "/company/portfolio/",
           },
           {
             name: "Доставка и оплата",
-            link: "#",
+            link: "/company/deliveryPay/",
           },
           {
             name: "Блог",
-            link: "#",
+            link: "/company/blog/",
           },
           {
             name: "Ответы на вопросы",
-            link: "#",
+            link: "/company/answerQuestions/",
           },
           {
             name: "Контакты",
-            link: "#",
+            link: "/company/contacts/",
           },
         ],
       ],
@@ -140,19 +140,19 @@ const menu = ref([
         [
           {
             name: "Бани-бочки",
-            link: "#",
+            link: "/",
           },
           {
             name: "Модульные дома",
-            link: "#",
+            link: "/catalog/modularHouses/",
           },
           {
             name: "Дачные домики",
-            link: "#",
+            link: "/catalog/countryHouses/",
           },
           {
             name: "А-Фреймы",
-            link: "#",
+            link: "/catalog/aFrame/",
           },
           {
             name: "Беседки",
