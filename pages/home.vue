@@ -5,12 +5,12 @@
     <SectionWhatProduce :items="produceData"/>
     <SectionFeatures :data="featuresData" />
     <div class="bg-[#1c1c1c]">
-      <div class="container">
-        <div class="bg-[url('/img/home/factory-banner.png')] bg-cover p-28 flex flex-col text-white">
-          <div class="text-9xl font-medium mb-10">
+      <div class="sm:container">
+        <div class="bg-[url('/img/home/factory-banner.png')] bg-cover p-14 lg:p-28 flex flex-col text-white">
+          <div class="text-5xl md:text-7xl lg:text-9xl font-medium mb-10">
             Соблюдаем <br>технологии <br>производства
           </div>
-          <div class="text-4xl mb-10">
+          <div class="text-2xl md:text-4xl mb-10">
             Все элементы строений производятся на современном <br>
             высокоточном и автоматизированном оборудовании в заводских<br> условиях, при идеальной температуре и влажности
           </div>
