@@ -4,113 +4,19 @@
     <SectionAdvantages :data="advantagesData1" />
     <SectionWhatProduce :items="produceData"/>
     <SectionFeatures :data="featuresData" />
-    <div class="bg-[#1c1c1c]">
-      <div class="sm:container">
-        <div class="bg-[url('/img/home/factory-banner.png')] bg-cover p-14 lg:p-28 flex flex-col text-white">
-          <div class="text-5xl md:text-7xl lg:text-9xl font-medium mb-10">
-            Соблюдаем <br>технологии <br>производства
-          </div>
-          <div class="text-2xl md:text-4xl mb-10">
-            Все элементы строений производятся на современном <br>
-            высокоточном и автоматизированном оборудовании в заводских<br> условиях, при идеальной температуре и влажности
-          </div>
-          <div class="flex bg-[#1c1c1c] w-fit p-12 text-4xl items-center gap-20 font-medium">
-            Тем самым достигается высокая <br>
-            степень подгонки и отсутствие дефектов<br>
-            в конструкциях
-            <svg width="112" height="112" viewBox="0 0 112 112" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle opacity="0.1" cx="56" cy="56" r="56" fill="#007550"/>
-              <circle opacity="0.3" cx="56" cy="56" r="46" fill="#007550"/>
-              <circle cx="56" cy="56.0005" r="36" fill="#007550"/>
-              <g clip-path="url(#clip0_140_22567)">
-                <circle cx="55.9985" cy="55.9995" r="16.5" stroke="white" stroke-width="2"/>
-                <path d="M63.75 55.1335C64.4167 55.5184 64.4167 56.4806 63.75 56.8655L52.875 63.1442C52.2083 63.5291 51.375 63.048 51.375 62.2782L51.375 49.7208C51.375 48.951 52.2083 48.4699 52.875 48.8548L63.75 55.1335Z" stroke="white" stroke-width="2"/>
-              </g>
-              <defs>
-                <clipPath id="clip0_140_22567">
-                  <rect width="36" height="36" fill="white" transform="translate(38 38)"/>
-                </clipPath>
-              </defs>
-            </svg>
-          </div>
-        </div>
-      </div>
-    </div>
-    <SectionProduction id="production" :data="productionData" />
-
+    <SectionTech :data="techData"/>
+    <SectionProductionShort id="production" :data="productionData" />
     <SectionChoose :data="choose" />
     <SectionHappyClients/>
+    
     <section class="">
-      <div class="container">
-
-        <div class="flex flex-col lg:flex-row mb-20">
-          <img class="w-full max-w-[776px]" src="/img/delivery/banner.png" alt="">
-          <div class="mt-32">
-            <div class="text-5xl font-medium mb-12">Меня зовут Анна, я руководитель отдела продаж <br />Wood and
-              Life</div>
-            <div class="font-medium mb-6">Свяжитесь со мной и расскажите, что хотите построить</div>
-            <div class="flex gap-4 items-center py-6 border-b border-[#D9D9D9]">
-              <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect width="28" height="28" rx="4" fill="#007550" />
-                <path d="M8 12.6328L13 17.6328L21 9.63281" stroke="white" stroke-width="2" />
-              </svg>
-              <span>Расскажу о деталях строительства</span>
-            </div>
-            <div class="flex gap-4 items-center py-6 border-b border-[#D9D9D9]">
-              <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect width="28" height="28" rx="4" fill="#007550" />
-                <path d="M8 12.6328L13 17.6328L21 9.63281" stroke="white" stroke-width="2" />
-              </svg>
-              <span>Сориентирую по стоимости и доставке</span>
-            </div>
-            <div class="flex gap-4 items-center py-6 border-b border-[#D9D9D9]">
-              <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect width="28" height="28" rx="4" fill="#007550" />
-                <path d="M8 12.6328L13 17.6328L21 9.63281" stroke="white" stroke-width="2" />
-              </svg>
-              <span>Отвечу на ваши вопросы</span>
-            </div>
-            <div class="text-4xl lg:text-8xl mt-16 mb-16">
-              <a href="tel:89000001122">8 (900) 000-11-22</a>
-            </div>
-            <button class="!py-6 !px-14 btn btn_transparent" type="button"
-                    data-v-inspector="components/Ui/Button/UiButtonPrimary.vue:21:3" data-v-092d6082=""
-                    data-v-43f32aca=""  @click="openModalInstallments">Перезвоните мне <span class="nuxt-icon"
-                                                                                             data-v-inspector="node_modules/nuxt-icons/dist/runtime/components/nuxt-icon.vue:2:3"
-                                                                                             data-v-43f32aca=""><svg width="20" height="21" viewBox="0 0 20 21" fill="none"
-                                                                                                                     xmlns="http://www.w3.org/2000/svg">
-                            <path d="M2 4.07812L2 6.07812C2 8.28726 3.79086 10.0781 6 10.0781L17 10.0781" stroke="white"
-                                  stroke-width="2"></path>
-                            <path d="M13 5.07812L18 10.0781L13 15.0781" stroke="white" stroke-width="2"></path>
-                        </svg>
-                    </span>
-            </button>
-          </div>
+        <div class="container">
+          <SectionCallback/>
         </div>
-      </div>
     </section>
-    <div class="bg-[#171717] text-white">
-      <div class="container">
-        <div class="caps-1 section-name">
-          Блог
-        </div>
-        <div class="text-5xl mb-20">
-          Читайте экспертные материалы по теме <span class="text-[#009767]">#строительство из дерева</span> в нашем блоге
-        </div>
-      </div>
-      <SectionBlog/>
-      <div class="container">
-        <button class="w-fit text-4xl font-semibold flex gap-6 items-center border rounded-full border-white px-16 py-8">
-          Другие материалы
-          <span class="nuxt-icon">
-                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M2 4.07812L2 6.07812C2 8.28726 3.79086 10.0781 6 10.0781L17 10.0781" stroke="white" stroke-width="2"></path>
-                <path d="M13 5.07812L18 10.0781L13 15.0781" stroke="white" stroke-width="2"></path>
-                </svg>
-              </span>
-        </button>
-      </div>
-    </div>
+    
+    
+    <SectionHomePreviewBlog/>
   </div>
 </template>
 <style>
@@ -130,6 +36,9 @@ import { ref } from "vue";
 import SectionHomeHero from "~/components/Section/SectionHomeHero.vue";
 import SectionAdvantages from "~/components/Section/SectionAdvantages.vue";
 import SectionWhatProduce from "~/components/Section/SectionWhatProduce.vue";
+import SectionTech from "~/components/Section/SectionTech.vue";
+import SectionCallback from "~/components/Section/SectionCallback.vue";
+import SectionHomePreviewBlog from "~/components/Section/SectionHomePreviewBlog.vue";
 import SectionProjects from "~/components/Section/SectionProjects.vue";
 import SectionForm from "~/components/Section/SectionForm.vue";
 import WhatsAppTab from "~/components/Part/Form/Communication/FormCommunicationTabWhatsApp.vue";
@@ -139,6 +48,7 @@ import SectionFeatures from "~/components/Section/SectionFeatures.vue";
 import SectionHousesCalc from "~/components/Section/SectionHousesCalc.vue";
 import SectionHousesInterior from "~/components/Section/SectionHousesInterior.vue";
 import { ICommunicationTabsExpanded } from "~/dto/interfaces/tabs";
+import { TechData } from "~/dto/interfaces/tech";
 import PhoneTab from "~/components/Part/Form/Communication/FormCommunicationTabPhone.vue";
 
 const advantagesData1 = ref({
@@ -160,6 +70,13 @@ const advantagesData1 = ref({
     },
   ],
 });
+
+const techData = ref<TechData>({
+    title: "Соблюдаем <br>технологии <br>производства",
+    subtitle: "Все элементы строений производятся на современном <br> высокоточном и автоматизированном оборудовании в заводских<br> условиях, при идеальной температуре и влажности",
+    blockText: "Тем самым достигается высокая <br>степень подгонки и отсутствие дефектов<br>в конструкциях",
+    img: '/img/home/factory-banner.png'
+})
 
 let produceData = ref<ProduceItem[]>([
   {
@@ -502,73 +419,6 @@ const productionData = ref({
     productionText: [
       "За эти годы мы изучили все особенности и свойства материалов, знаем все нюансы технологии строительства, что позволяет нам без потери качества воплощать любые идеи.",
       "<b>Несем ответственность за каждый объект:</b> с момента <br>заключения договора до установки зданий и строений, и в течение всего гарантийного срока.",
-    ],
-  },
-  team: {
-    title: "Команда",
-    desc: "Компания это не только оборудование и материалы, но и люди, которые работают в ней",
-    list: [
-      {
-        img: "/img/team/1.png",
-        title: "Алексей Попов",
-        desc: "Начальник производства",
-      },
-      {
-        img: "/img/team/2.png",
-        title: "Роман Иванов",
-        desc: "Главный инженер",
-      },
-      {
-        img: "/img/team/3.png",
-        title: "Александр Борискин",
-        desc: "Начальник клиентского сервиса",
-      },
-      {
-        img: "/img/team/4.png",
-        title: "Алексей Смелов",
-        desc: "Начальник установки и доставки",
-      }
-    ]
-  },
-  bath: {
-    title: "Производство",
-    subtitle: "Цифры и факты о нашем производстве",
-    facts: [
-      {
-        icon: "area",
-        name: "5 500 м²",
-        desc: "Площадь производственных цехов",
-      },
-      {
-        icon: "warehouse",
-        name: "3 склада",
-        desc: "Большие запасы материалов, соблюдение норм хранения",
-      },
-      {
-        icon: "cpu",
-        name: "ЧПУ станки",
-        desc: "Изготавливаем с точность до десятых долей миллиметра",
-      },
-    ],
-    banner: {
-      title: "Лучше один раз увидеть",
-      subtitle: "4 минуты видео расскажут <br> все о нашем производстве",
-      videoLink: "https://youtu.be/b9McVO9hpUE",
-      img: "/img/elements/stove-white.png",
-    },
-    slides: [
-      {
-        img: "/img/production/slides/image-1.jpg",
-        desc: "Баня мечты",
-      },
-      {
-        img: "/img/production/slides/image-1.jpg",
-        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quam purus, mollis quis facilisis in, faucibus at elit. Nullam vulputate congue magna in dapibus. Aliquam hendrerit odio est. Vivamus porta, odio eu pulvinar fringilla, dui est ultrices risus, sit amet elementum leo lacus sit amet enim. Aenean dictum, nisi vel consequat imperdiet, lacus ligula tincidunt diam, et molestie neque sem sit amet dolor. Ut nulla velit, mattis quis nisi nec, condimentum tempor mi. Duis feugiat maximus ipsum viverra pharetra.",
-      },
-      {
-        img: "/img/production/slides/image-1.jpg",
-        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quam purus, mollis quis facilisis in, faucibus at elit.",
-      },
     ],
   },
 });
