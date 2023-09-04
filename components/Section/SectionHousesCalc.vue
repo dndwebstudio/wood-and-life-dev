@@ -1,7 +1,7 @@
 <template>
   <section class="pt-48 pb-48 bg-[url('/img/modular-houses/bg-green.png')] bg-cover">
     <div class="container">
-      <div data-v-11a8998c=""  class="caps-1 section-name" v-html="data.section"></div>
+      <div data-v-11a8998c=""  class="caps-1 section-name !text-white opacity-50" v-html="data.section"></div>
       <div class="grid lg:grid-cols-6">
         <div class="w-full col-span-2">
           <svg width="72" height="73" viewBox="0 0 72 73" fill="none" xmlns="http://www.w3.org/2000/svg">

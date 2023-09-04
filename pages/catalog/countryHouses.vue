@@ -151,18 +151,6 @@ const info = ref({
         icon: "quiz-check-disable",
         active: false
       },
-      {
-        title: "больше 70 м2",
-        img: "/img/modular-houses/calc-img-3.png",
-        icon: "quiz-check-disable",
-        active: false
-      },
-      {
-        title: "больше 70 м2",
-        img: "/img/modular-houses/calc-img-3.png",
-        icon: "quiz-check-disable",
-        active: false
-      }
     ],
   },
   {

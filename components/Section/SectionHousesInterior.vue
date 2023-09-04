@@ -37,7 +37,7 @@
 
 <script setup lang="ts">
 import { Pagination } from "swiper";
-import {ref} from 'vue'
+import {ref} from 'vue';
 import useTooltips from '@/mixins/tooltipsMixin';
 
 const { applyTooltips } = useTooltips();
@@ -109,9 +109,7 @@ onMounted(() => {
     },
   };
   nextTick(() => {
-
     applyTooltips();
-
   });
 
   Object.assign(heroSlider.value, params);

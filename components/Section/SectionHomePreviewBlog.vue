@@ -1,7 +1,7 @@
 <template>
-    <div class="bg-[#171717] text-white">
+    <div class="bg-[#171717] text-white pt-32">
         <div class="container">
-            <div class="text-5xl section-name">
+            <div class="flex text-5xl section-name">
                 Блог
             </div>
             <div class="text-5xl mb-20">
@@ -10,10 +10,10 @@
             </div>
         </div>
         <SectionBlogShort />
-        <div class="container">
+        <div class="container pb-32">
             <!-- <button
                 class="w-fit text-4xl font-semibold flex gap-6 items-center border rounded-full border-white px-16 py-8"> -->
-                <NuxtLink :to="'/company/blog/'" class="w-fit text-4xl font-semibold flex gap-6 items-center border rounded-full border-white px-16 py-8">
+                <NuxtLink :to="'/company/blog/'" class="w-fit text-2xl lg:text-4xl font-semibold flex gap-6 items-center border rounded-full border-white px-8 py-4 lg:px-16 lg:py-8">
                 Другие материалы
                     <span class="nuxt-icon">
                         <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
