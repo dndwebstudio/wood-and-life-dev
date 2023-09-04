@@ -112,10 +112,13 @@ onMounted(() => {
     applyTooltips();
   });
 
+  
   Object.assign(heroSlider.value, params);
   heroSlider.value.initialize();
-  Object.assign(ourPartnersSlider.value, paramsPartners);
-  ourPartnersSlider.value.initialize();
+  if(ourPartnersSlider.value){
+    Object.assign(ourPartnersSlider.value, paramsPartners);
+    ourPartnersSlider.value.initialize();
+  }
 
 });
 
