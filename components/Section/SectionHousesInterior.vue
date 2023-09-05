@@ -1,10 +1,10 @@
 <template>
-  <section class="pt-48 bg-[#fff]">
+  <section class="pt-24 lg:pt-48 bg-[#fff]">
     <div class="container">
       <div data-v-11a8998c=""  class="caps-1 section-name" v-html="data.section"></div>
       <div class="">
         <div class="w-full">
-          <h2 class="section-form__title mt-12 mb-24" v-html="data.title"></h2>
+          <h2 class="section-form__title mt-6 mb-12 lg:mt-12 lg:mb-24" v-html="data.title"></h2>
         </div>
         <swiper-container v-if="slide && slide.length > 0" ref="ourPartnersSlider" init="false" class="credit__slider flex gap-4 w-full mb-36">
           <swiper-slide
@@ -159,7 +159,7 @@ onMounted(() => {
   }
   @include r($sm) {
     padding: 3.4rem 0 8.1rem;
-    min-height: 55rem;
+    min-height: 25rem;
   }
   &::after {
     display: block;

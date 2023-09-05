@@ -95,6 +95,11 @@ h2.section-advantages__title {
   border-top: none!important;
   padding: 0 0 12rem!important;
 }
+@media screen and (max-width: 764px) {
+  #advantagesInterior.section-advantages {
+    padding: 0 0 6rem!important;
+  }
+}
 #complex {
   border-top: 1px solid var(--gray-200);
 }
