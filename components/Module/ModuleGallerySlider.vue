@@ -1,7 +1,7 @@
 <template>
-  <swiper-container v-if="slide && slide.length > 0" ref="slider" class="gallery-slider" init="false">
+  <swiper-container v-if="props.slides && props.slides.length > 0" ref="slider" class="gallery-slider" init="false">
     <swiper-slide
-      v-for="(slide, idx) in slides"
+      v-for="(slide, idx) in props.slides"
       :key="idx"
       class="gallery-slider__slide"
     >
@@ -31,7 +31,11 @@ interface Props {
   slides: Slide[];
 }
 
-defineProps<Props>();
+
+
+let props = defineProps<Props>();
+
+console.log(props.slides);
 
 const slider = ref();
 
