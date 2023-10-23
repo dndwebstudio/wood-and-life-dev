@@ -1,9 +1,9 @@
 <template>
   <section class="pt-48 pb-48 bg-[url('/img/modular-houses/bg-green.png')] bg-cover">
-    <div class="container">
-      <div data-v-11a8998c=""  class="caps-1 section-name !text-white opacity-50" v-html="data.section"></div>
+    <div class="container section-house-calc--container">
+      <div data-v-11a8998c=""  class="caps-1 section-name !text-white opacity-50 section-house-calc--calc" v-html="data.section"></div>
       <div class="grid lg:grid-cols-6">
-        <div class="w-full col-span-2">
+        <div class="w-full col-span-2 section-house-calc--head">
           <svg width="72" height="73" viewBox="0 0 72 73" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g filter="url(#filter0_b_806_18637)">
               <rect y="0.445312" width="72" height="72" rx="36" fill="black" fill-opacity="0.2"/>
@@ -61,5 +61,14 @@ defineProps<Props>();
 </script>
 
 <style scoped>
-
+@media screen and (max-width: 450px) {
+  .section-house-calc--container{
+    padding: 0!important;
+  }
+  .section-house-calc--head,
+  .section-house-calc--calc{
+    padding-right: 1.2rem!important;
+    padding-left: 1.2rem!important;
+  }
+}
 </style>

@@ -61,6 +61,10 @@ defineProps<Props>();
   }
 
   &__content {
+    display: flex;
+    align-items: flex-start;
+    gap: 9rem;
+    flex-direction: row;
   }
 
   &__list {
@@ -68,6 +72,14 @@ defineProps<Props>();
     @include r($sm) {
       margin-bottom: 4rem;
     }
+  }
+}
+@media screen and (max-width: 991px) {
+  .faq__content {
+    display: flex;
+    align-items: flex-start;
+    gap: 9rem;
+    flex-direction: column;
   }
 }
 </style>

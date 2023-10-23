@@ -191,4 +191,21 @@ defineExpose({
     margin-top: 1.4rem;
   }
 }
+@media screen and (max-width: 767px) {
+  .section-prod_advantages-block{
+    padding-bottom: 40px;
+  }
+  .prod-advantages_about-baths{
+    display: block!important;;
+  }
+  .prod-advantages_baths-title{
+    font-size: 1.8rem;
+    text-align: left;
+  }
+  .prod-advantages_baths-desc{
+    font-size: 1.5rem;
+    text-align: left;
+    margin: 20px 0 0 0;
+  }
+}
 </style>

@@ -44,7 +44,7 @@
           </ul>
         </div>
       </div>
-      <div class="mobile-menu__right">
+      <div class="mobile-menu__right"  v-if="$route.fullPath && !$route.fullPath.includes('/company/')">
         <h5 class="mobile-menu__page-name">Бани-бочки</h5>
         <nav>
           <ul class="mobile-menu__nav-list">

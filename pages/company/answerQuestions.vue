@@ -2,12 +2,14 @@
   <div>
     <SectionFAQ id="faq" :data="faqData" />
     <SectionChoose :data="choose" />
+    <VueVideoPreview ref="videopreview" :data="previewData" />
   </div>
 </template>
 
 <script setup lang="ts">
 import { ref } from "vue";
 import SectionChoose from "~/components/Section/SectionChoose.vue";
+import VueVideoPreview from "~/components/Module/VueVideoPreview.vue";
 
 const faqData = ref({
   banner: {
@@ -74,6 +76,11 @@ const faqData = ref({
     },
   ],
 });
+const previewData = ref({
+  videoLink: "https://youtu.be/tAGnKpE4NCI",
+  text: "Узнайте о Wood and Life за 3 минуты",
+  img: '/img/bathouse-advantages/image-4.jpg'
+})
 
 const choose = ref ({
   title: "Выберите, что хотите построить",
