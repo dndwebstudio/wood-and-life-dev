@@ -1,14 +1,34 @@
 <template>
     <div class="pagination flex gap-20 font-medium mt-48 text-4xl">
         <!-- <span class="text-[#009767] border-b border-[#009767]">1</span> -->
-        <span 
+        <span class=" hidden sm:flex"
             v-for="(item, ind) in paginationLine.pages" 
             :key="ind"
             :class="getClassListPaginationItem(item.active, item.type)"
             @click="changeCurrentPage(item.pageValue)"
         >{{ item.value }}</span>
+
+        <div class="w-full flex sm:hidden justify-center">
+            <span @click="goPrev()" class="pagination-m-prev" :class="pageCurrent == 1 ? 'pagination-m-disable' : ''">Назад</span>
+            <span>{{ pageCurrent }} из {{ pageLast }}</span>
+            <span @click="goNext()" class="pagination-m-next" :class="pageCurrent == pageLast ? 'pagination-m-disable' : ''">Вперед</span>
+        </div>
     </div>
 </template>
+
+<style>
+.pagination-m-prev, .pagination-m-next{
+    cursor: pointer;
+    font-size: 14px;
+    margin: 0 7px;
+    color: var(--accent-color);
+
+}
+.pagination-m-disable{
+    opacity: 0.5;
+    cursor: default;
+}
+</style>
 
 <script lang="ts" setup>
 import { ref, computed } from 'vue'; 
@@ -47,6 +67,7 @@ const props = withDefaults(defineProps<Props>(), {
 })
 
 let pageCurrent = ref<number>(props.pageCurrent)
+let pageLast = ref<number>(props.pageLast)
 
 const paginationLine = computed<PaginationLine>(() => {
     let returnData: PaginationLine = {
@@ -100,6 +121,7 @@ const paginationLine = computed<PaginationLine>(() => {
     return returnData
 })
 
+
 function getClassListPaginationItem(isActive:boolean, itemType:PaginationLineItemType) {
     let returnData:string[] = []
 
@@ -122,6 +144,18 @@ function changeCurrentPage(value?:number){
     if(value){
         pageCurrent.value = value
         emit("changePage", pageCurrent.value)
+    }
+}
+
+function goPrev(){
+    if(pageCurrent.value > 1){
+        changeCurrentPage(pageCurrent.value-1)
+    }
+}
+
+function goNext(){
+    if(pageCurrent.value < pageLast.value){
+        changeCurrentPage(pageCurrent.value+1)
     }
 }
 
