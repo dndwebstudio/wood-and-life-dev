@@ -1,7 +1,8 @@
 <template>
     <div class="">
         <div>
-            <img class="w-full mb-8" :src="img" alt="">
+            <!-- <img class="w-full mb-8" :src="img" alt=""> -->
+            <div class="w-full mb-8 section-blog_image" :style="{backgroundImage:'url('+img+')'}"></div>
         </div>
         <div class="font-medium text-5xl mb-8">
             {{ title }}
@@ -31,3 +32,15 @@ const props = withDefaults(defineProps<Props>(), {
     url: "",
 });
 </script>
+<style>
+.section-blog_image:before {
+  content: "";
+  padding-top: 66%;
+  float: left;
+}
+.section-blog_image {
+    overflow: hidden;
+    background-position: center top;
+    background-size: cover;
+}
+</style>

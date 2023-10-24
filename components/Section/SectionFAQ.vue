@@ -62,9 +62,9 @@ defineProps<Props>();
 
   &__content {
     display: flex;
-    align-items: flex-start;
-    gap: 9rem;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 24px;
   }
 
   &__list {
@@ -80,6 +80,7 @@ defineProps<Props>();
     align-items: flex-start;
     gap: 9rem;
     flex-direction: column;
+    align-items: stretch;
   }
 }
 </style>

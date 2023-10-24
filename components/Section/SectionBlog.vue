@@ -1,7 +1,7 @@
 <template>
     <section class="pb-48">
         <div class="container">
-            <div class="grid grid-cols-1 sm:grid-cols-4 lg:grid-cols-4 gap-16">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-16">
                 <SectionBlogElement 
                     v-for="(item, ind) in blogData.items" 
                     :key="ind" 
@@ -11,7 +11,7 @@
                     :url="item.url" 
                     />
             </div>
-            <Pagination :pageLast="25"/>
+            <Pagination :viewCountBorder="1" :pageLast="25"/>
         </div>
     </section>
 </template>
