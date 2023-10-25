@@ -1,6 +1,6 @@
 <template>
     <div class="flex flex-start gap-24 flex-col lg:flex-row" style="align-items: flex-start;">
-        <div class="sticky mb-16 lg:max-w-[364px] w-full" style="top:115px">
+        <div class="responsive mb-16 xl:max-w-[364px] w-full lg:sticky" style="top:115px">
             <div class="font-medium mb-5">Содержание:</div>
             <ul class="pl-5">
                 <li class="list-disc text-[#009767]" v-for="(item, ind) in descriptionPath">
@@ -48,5 +48,13 @@ let descriptionPath = ref<DetailBlogDescriptionPath[]>(props.detailData.descript
 <style>
 html {
     scroll-behavior: smooth;
+}
+.videoBlockBlog:before{
+  content: "";
+  padding-top: 56.25%;
+  float: left;
+}
+.videoBlockBlog{
+  overflow: hidden;
 }
 </style>

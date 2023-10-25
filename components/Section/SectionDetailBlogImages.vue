@@ -1,7 +1,7 @@
 <template>
-    <div ref="container" class="grid grid-cols-3 pt-16 pb-16 gap-5">
+    <div ref="container" class="grid grid-cols-1 sm:grid-cols-3 pt-16 pb-16 gap-5">
         <a data-fancybox="gallery" v-for="(itemImage, indImage) in imagesList" :key="indImage" :href="itemImage" >
-            <img :src="itemImage"  />
+            <img :src="itemImage" class="w-full"  />
         </a>
     </div>
 </template>
