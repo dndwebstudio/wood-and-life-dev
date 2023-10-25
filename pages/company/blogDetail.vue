@@ -71,6 +71,7 @@ interface DetailBlogDescriptionPath {
 	title: string;
 	text: string;
 	addedClass: string;
+	images?: string[];
 }
 
 interface DetailBlogData {
@@ -239,13 +240,13 @@ const deatilData = ref<DetailBlogData>({
 							установлена в тени или на солнце. Вместных климатических условиях велик риск того, что под
 							купелью может образоваться грибок или плесень. Однако, благодаря стекловолокну, из которого
 							изготовлены наши купели, ничего страшного не произойдёт и от плесени и грибка достаточно легко
-							избавиться. Поэтому зазор под купелью – лишь рекомендация.
-							<div class="grid grid-cols-3 pt-16 pb-16">
-								<img src="/img/blog-detail/4.png" alt="">
-								<img src="/img/blog-detail/5.png" alt="">
-								<img src="/img/blog-detail/6.png" alt="">
-							</div>`,
-			addedClass: "text-3xl"
+							избавиться. Поэтому зазор под купелью – лишь рекомендация.`,
+			addedClass: "text-3xl",
+			images: [
+				"/img/blog-detail/4.png",
+				"/img/blog-detail/5.png",
+				"/img/blog-detail/6.png"
+			]
 		},
 		{
 			title: `Как ухаживать за деревянной
