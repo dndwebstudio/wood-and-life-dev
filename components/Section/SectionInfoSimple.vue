@@ -3,7 +3,7 @@
     <div class="container">
       <PartSectionName :name="data.sectionName" />
       <div class="info-simple__content">
-        <div class="info-simple__col info-simple__col_left">
+        <div class="info-simple__col info-simple__col_right">
           <img
             class="info-simple__img"
             :src="data.src"
@@ -12,7 +12,7 @@
           />
           <slot name="banner"></slot>
         </div>
-        <div class="info-simple__col info-simple__col_right">
+        <div class="info-simple__col info-simple__col_left">
           <div class="info-simple__info">
             <h2 class="h2 info-simple__title" v-html="data.title" />
             <div class="info-simple__desc">
