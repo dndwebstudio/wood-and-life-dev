@@ -152,20 +152,21 @@ onMounted(() => {
   padding-bottom: 85px;
 }
 .home-hero-slider__slide {
-  padding: 6.4rem 0;
+  // padding: 6.4rem 0;
   position: relative;
   height: auto;
   z-index: 1;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 78.1rem;
+  // min-height: 78.1rem;
+  overflow: hidden; /* clearfix */
   @include r($md) {
-    min-height: 73rem;
+    // min-height: 73rem;
   }
   @include r($sm) {
-    padding: 3.4rem 0 8.1rem;
-    min-height: 25rem;
+    // padding: 3.4rem 0 8.1rem;
+    // min-height: 25rem;
   }
   &::after {
     display: block;
@@ -183,6 +184,12 @@ onMounted(() => {
         rgba(40, 40, 40, 0.7) 100%
     );
     z-index: -1;
+  }
+
+  &::before{
+    content: "";
+    padding-top: 56.25%;
+    float: left;
   }
 
   &-label {
