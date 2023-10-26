@@ -21,8 +21,8 @@
           class="relative">
           <img class="w-full" :src="el.img" alt="">
           <div class="absolute inset-12 flex flex-col items-start justify-end  text-[#fff]">
-            <div class="text-5xl font-medium" v-html="el.title"></div>
-            <p  class="text-3xl" v-html="el.desc"></p>
+            <div class="text-5xl font-medium lg:text-[32px] sm:text-[22px] text-[18px] lg:leading-[35px] sm:leading-[26px] leading-[21px]" v-html="el.title"></div>
+            <p  class="text-3xl lg:text-[18px] sm:text-[14px] text-[14px] lg:leading-[21px] sm:leading-[17px] leading-[17px]" v-html="el.desc"></p>
           </div>
 
         </swiper-slide>
