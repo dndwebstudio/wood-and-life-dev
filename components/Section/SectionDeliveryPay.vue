@@ -20,13 +20,18 @@
                         <p>Мы являемся аккредитованным партнером банков. У нас вы можете оформить кредит или рассрочку на
                             льготных условиях.</p>
                     </div>
-                    <div class="credit__slider flex gap-4 w-full mb-12">
+                    <!-- <div class="credit__slider flex gap-4 w-full mb-12">
                         <img class="w-full" src="/img/credit/1.png" alt="">
                         <img class="w-full" src="/img/credit/2.png" alt="">
                         <img class="w-full" src="/img/credit/3.png" alt="">
                         <img class="w-full" src="/img/credit/4.png" alt="">
                         <img class="w-full" src="/img/credit/5.png" alt="">
-                    </div>
+                    </div> -->
+                    <swiper-container ref="creditSlider" class="credit__slider flex gap-4 w-full mb-12" init="false">
+                        <swiper-slide v-for="(slide, idx) in slides" :key="idx" class="credit-slider__slide">
+                            <img class="w-full" :src="slide" alt="">
+                        </swiper-slide>
+                    </swiper-container>
                     <div class="text-3xl mb-12">
                         <p>Чтобы получить дополнительную информацию о способах оплаты, а также выбрать наиболее подходящий
                             для Вас вариант, узнать расчетный счет компании для перевода денежных средств или получить
@@ -103,6 +108,7 @@
 </template>
 
 <script setup lang="ts">
+import { Navigation } from "swiper";
 import { ref } from "vue";
 import { useModal } from "vue-final-modal";
 import ModalForm from "@/components/Modal/ModalForm.vue";
@@ -123,4 +129,48 @@ const { open: openModalInstallments } = useModal({
     },
   },
 });
+
+const slides = ref<string[]>(
+    [
+        "/img/credit/1.png",
+        "/img/credit/2.png",
+        "/img/credit/3.png",
+        "/img/credit/4.png",
+        "/img/credit/5.png",
+        "/img/credit/1.png",
+        "/img/credit/2.png",
+        "/img/credit/3.png",
+        "/img/credit/4.png",
+        "/img/credit/5.png",
+    ]
+)
+
+const creditSlider = ref();
+
+onMounted(() => {
+  const params = {
+    spaceBetween: 8,
+    modules: [Navigation],
+    navigation: {
+      nextEl: ".credit-slider__navigation .slider-navigation__arrow_right",
+      prevEl: ".credit-slider__navigation .slider-navigation__arrow_left",
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 2,
+      },
+      768: {
+        slidesPerView: 3,
+      },
+      992: {
+        slidesPerView: 5,
+      },
+    },
+  };
+
+  Object.assign(creditSlider.value, params);
+  creditSlider.value.initialize();
+});
+
+
 </script>
