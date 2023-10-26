@@ -126,4 +126,7 @@ onMounted(() => {
   width: 776px;
   height: 776px;
 }
+.page--factory .info-simple__content{
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="page--factory">
     <SectionInfoSimple id="technologies" :data="techData">
       <template #banner>
         <ModuleBanner :data="techData.banner" />
