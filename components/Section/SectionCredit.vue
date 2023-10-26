@@ -18,7 +18,7 @@
               <div class="credit__slider-title">Банки-партнеры</div>
               <swiper-container ref="creditSlider" class="credit-slider" init="false">
                 <swiper-slide v-for="(slide, idx) in data.slides" :key="idx" class="credit-slider__slide">
-                  <mg :src="slide.img" :alt="slide.name" format="webp" loading="lazy" />
+                  <img :src="slide.img" :alt="slide.name" format="webp" loading="lazy" />
                 </swiper-slide>
               </swiper-container>
               <UiSliderNavigation class="credit-slider__navigation" />

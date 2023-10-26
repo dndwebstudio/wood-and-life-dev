@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<HeaderContainer :title="'Контакты'" :classString="'text-9xl pt-48'" />
+		<HeaderContainer :title="'Контакты'" :classString="'text-6xl sm:text-9xl pt-48'" />
 		<SectionContact />
 		<LazySectionMap :data="mapData" :shops="mapData.shops" />
 		<SectionChoose :data="choose" />

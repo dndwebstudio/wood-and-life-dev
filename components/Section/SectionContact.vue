@@ -3,8 +3,8 @@
         <div class="container">
             <div class="flex justify-between flex-col lg:flex-row">
                 <div class="flex flex-col gap-5 w-full max-w-[528px] ">
-                    <a class="text-6xl text-[#009767] font-medium" href="tel:88006007214">8 (800) 600-72-14</a>
-                    <a class="text-6xl text-[#009767] font-medium" href="tel:89993332853">8 (999) 333-28-53</a>
+                    <a class="text-4xl sm:text-6xl text-[#009767] font-medium" href="tel:88006007214">8 (800) 600-72-14</a>
+                    <a class="text-4xl sm:text-6xl text-[#009767] font-medium" href="tel:89993332853">8 (999) 333-28-53</a>
                     <div class="mb-6">
                         Работаем ежедневно с 9:00 до 18:00 (по мск)
                     </div>
@@ -53,13 +53,13 @@
                         </div>
                     </div>
                 </div>
-                <form class="p-24 shadow flex flex-col max-w-[912px]" ref="form" @submit.prevent.stop="handleSubmit">
+                <form class="FormSectionContact sm:p-24 p-10 shadow flex flex-col max-w-[912px] relative" ref="form" @submit.prevent.stop="handleSubmit">
                     <div class="text-[#333] text-3xl">Обратная связь</div>
                     <div class="text-4xl py-5 text-[#007550] font-medium">Напишите и мы ответим</div>
-                    <textarea class="w-full p-7 bg-[#F5F5F5] mb-6" name="" id="" rows="5" placeholder="Текст сообщения"
+                    <textarea class="w-full p-7 bg-[#F5F5F5] mb-6 " name="" id="" rows="5" placeholder="Текст сообщения"
                         required></textarea>
                     <input class="w-full p-7 bg-[#F5F5F5] mb-6" type="text" placeholder="Как к вам обращаться?" required>
-                    <div class="flex gap-6">
+                    <div class="flex lg:gap-6 flex-col lg:flex-row">
                         <input class="w-full p-7 bg-[#F5F5F5] mb-6" type="email" placeholder="e-mail" required>
                         <input class="w-full p-7 bg-[#F5F5F5] mb-6" type="text" v-maska placeholder="+7 (___) ___-__-__"
                             :pattern="verifyName('phone')" :data-maska="'+7 (###) ### ## ##'" required>
@@ -143,3 +143,13 @@ const handleSubmit = async () => {
         });
 };
 </script>
+<style>
+.FormSectionContact {
+    top: -50px;
+}
+@media screen and (max-width: 1024px){
+    .FormSectionContact {
+    top: 50px;
+}
+}
+</style>

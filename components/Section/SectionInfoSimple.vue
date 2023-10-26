@@ -21,6 +21,7 @@
           </div>
           <PartInfoSimpleQuote v-if="data.quote" :data="data.quote" />
         </div>
+
       </div>
     </div>
   </section>
