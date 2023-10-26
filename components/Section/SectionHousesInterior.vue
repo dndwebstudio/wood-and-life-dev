@@ -89,11 +89,7 @@ onMounted(() => {
       prevEl: ".partner-slider__navigation .slider-navigation__arrow_left",
     },
     breakpoints: {
-      500: {
-        slidesPerView: 2,
-        spaceBetween: 8,
-      },
-      700: {
+      1: {
         slidesPerView: 3,
         spaceBetween: 8,
       },
@@ -160,7 +156,8 @@ onMounted(() => {
   background-repeat: no-repeat;
   background-size: cover;
   // min-height: 78.1rem;
-  overflow: hidden; /* clearfix */
+  // overflow: hidden; /* clearfix */
+  clear: both;
   @include r($md) {
     // min-height: 73rem;
   }
