@@ -14,6 +14,7 @@ defineProps<Props>();
 
 <style scoped lang="scss">
 .section-name {
+  font-size: 18px;
   margin-bottom: 6.4rem;
   font-weight: 700;
   text-transform: uppercase;

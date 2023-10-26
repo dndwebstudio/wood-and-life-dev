@@ -16,9 +16,21 @@
     <SectionHousesInterior :data="slides" />
     <SectionInfoSimple class="techData2" id="technologies" :data="techData2">
       <template #desc>
-        <p>
-          <b>Закупаем сырье большими партиями и в межсезонье, что позволяет оптимизировать себестоимость готовой продукции</b><br/><br/> Повышение эффективности использования оборудования       </p>
-      </template>
+        <p style="margin-right: -30px;padding-top: 64px;">
+          <b class="text-[32px] leading-9 font-medium">Закупаем сырье большими партиями и в<br/>
+             межсезонье, что позволяет оптимизировать<br/>
+             себестоимость готовой продукции</b><br/><br/> <div style="font-size: 24px; padding-top: 48px; padding-bottom: 24px;">Повышение эффективности использования оборудования       </div></p>
+            <div class="flex gap-4 text-[16px] leading-[19px]">
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+                <path d="M2 4.83447L2 6.83447C2 9.04361 3.79086 10.8345 6 10.8345L17 10.8345" stroke="#838383"/>
+                <path d="M12 5.83447L17 10.8345L12 15.8345" stroke="#838383"/>
+                </svg>
+              </div>
+              <div style="margin-right: -83px;"><p>Использование специализированных инструментов и оборудования значительно ускоряет <br>
+                      процесс обработки древесины и снижает затраты на труд</p></div>
+            </div>
+        </template>
     </SectionInfoSimple>
     <SectionChoose :data="choose" />
   </div>

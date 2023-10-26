@@ -12,7 +12,7 @@
           />
           <slot name="banner"></slot>
         </div>
-        <div class="info-simple__col info-simple__col_left">
+        <div class="info-simple__col info-simple__col_left mt-[104px]">
           <div class="info-simple__info">
             <h2 class="h2 info-simple__title" v-html="data.title" />
             <div class="info-simple__desc">
@@ -74,7 +74,7 @@ onMounted(() => {
   &__content {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 4.8rem;
+    gap: 3rem;
     @include r($md) {
       grid-template-columns: auto;
     }
@@ -121,5 +121,9 @@ onMounted(() => {
       }
     }
   }
+}
+.info-simple__img{
+  width: 776px;
+  height: 776px;
 }
 </style>
