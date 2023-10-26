@@ -6,13 +6,16 @@
         <div class="w-full">
           <h2 class="section-form__title mt-6 mb-12 lg:mt-12 lg:mb-24" v-html="data.title"></h2>
         </div>
-        <swiper-container v-if="slide && slide.length > 0" ref="ourPartnersSlider" init="false" class="credit__slider flex gap-4 w-full mb-36">
-          <swiper-slide
-            v-for="(slide, idx) in data.partnersList"
-            :key="idx" class="w-full">
-            <img class="w-full" :src="slide.url" alt="">
-          </swiper-slide>
-        </swiper-container>
+        <div class="relative partner__slider--block">
+          <swiper-container ref="ourPartnersSlider" init="false" class="credit__slider partner__slider flex gap-4 mb-36">
+            <swiper-slide
+              v-for="(slide, idx) in data.partnersList"
+              :key="idx" class="w-full">
+              <img class="w-full" :src="slide.url" alt="">
+            </swiper-slide>
+          </swiper-container>
+          <UiSliderNavigation class="partner-slider__navigation" />
+        </div>
         <swiper-container ref="heroSlider" init="false" class="home-hero-slider">
           <swiper-slide
             v-for="(slide, idx) in data.sliders"
@@ -36,7 +39,7 @@
 </template>
 
 <script setup lang="ts">
-import { Pagination } from "swiper";
+import { Pagination, Navigation } from "swiper";
 import {ref} from 'vue';
 import useTooltips from '@/mixins/tooltipsMixin';
 
@@ -80,7 +83,11 @@ onMounted(() => {
     },
   };
   const paramsPartners = {
-    modules: [],
+    modules: [Navigation],
+    navigation: {
+      nextEl: ".partner-slider__navigation .slider-navigation__arrow_right",
+      prevEl: ".partner-slider__navigation .slider-navigation__arrow_left",
+    },
     breakpoints: {
       500: {
         slidesPerView: 2,
@@ -125,7 +132,6 @@ onMounted(() => {
 </script>
 
 <style scoped lang="scss">
-
 .pointers__body{
   display: flex;
   align-items: center;
@@ -315,5 +321,10 @@ onMounted(() => {
   position: absolute;
   bottom: -44px;
   color: #000;
+}
+
+.partner__slider{
+  margin-left: 3rem;
+  margin-right: 3rem;
 }
 </style>
