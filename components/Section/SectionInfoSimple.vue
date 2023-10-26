@@ -12,7 +12,7 @@
           />
           <slot name="banner"></slot>
         </div>
-        <div class="info-simple__col info-simple__col_left mt-[104px]">
+        <div class="info-simple__col info-simple__col_left mt-[0] lg:mt-[104px]">
           <div class="info-simple__info">
             <h2 class="h2 info-simple__title" v-html="data.title" />
             <div class="info-simple__desc">

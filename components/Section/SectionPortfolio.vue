@@ -14,7 +14,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16">
                 <div class="shadow" v-for="(item, ind) in activePortfolio" :key="ind">
                     <div>
-                        <img class="w-full" :src="item.img" alt="">
+                        <img class="w-full h-[236px] object-cover object-top" :src="item.img" alt="">
                     </div>
                     <div class="grid grid-cols-3 justify-between p-4 border-b border-[#E3E3E3]">
                         <div class="flex justify-center items-center flex-col border-r border-[#E3E3E3]">
@@ -27,7 +27,7 @@
                                     d="M6.33203 20.3336V21.3336C6.33203 22.4382 7.22746 23.3336 8.33203 23.3336H17.332C18.4366 23.3336 19.332 22.4382 19.332 21.3336V20.3336"
                                     stroke="#009767" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
-                            {{item.city}}
+                            <span class="text-center">{{item.city}}</span>
                         </div>
                         <div class="flex justify-center items-center flex-col border-r border-[#E3E3E3]">
                             <svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
