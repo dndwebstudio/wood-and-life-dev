@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="blog--page">
     <HeaderContainer :title="'Блог'"/>
     <SectionBlog/>
     <SectionChoose :data="choose" />
@@ -61,12 +61,12 @@ const choose = ref ({
 })
 </script>
 
-<style lang="scss">
-.section-name,
-.section-prod__flex-block,
-.prod-advantages_about-baths,
-.prod-bath,
-.team-section {
+<style lang="scss" scoped>
+.blog--page .section-name,
+.blog--page .section-prod__flex-block,
+.blog--page .prod-advantages_about-baths,
+.blog--page .prod-bath,
+.blog--page .team-section {
   display: none!important;
 }
 .section-prod {

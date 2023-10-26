@@ -1,5 +1,5 @@
 <template>
-	<div>
+	<div class="portfolio-page">
 		<HeaderContainer :title="'Выполненные проекты'" :classString="'pt-20 lg:pt-48'" />
 		<SectionProduction id="production" :data="productionData" />
 		<SectionPortfolio :portfolio="portfolioData" />
@@ -492,11 +492,11 @@ const portfolioData = ref({
 </script>
 
 <style lang="scss">
-.section-name,
-.section-prod__flex-block,
-.prod-advantages_about-baths,
-.prod-bath,
-.team-section {
+.portfolio-page .section-name,
+.portfolio-page .section-prod__flex-block,
+.portfolio-page .prod-advantages_about-baths,
+.portfolio-page .prod-bath,
+.portfolio-page .team-section {
 	display: none !important;
 }
 
