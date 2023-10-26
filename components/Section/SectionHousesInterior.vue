@@ -7,7 +7,7 @@
           <h2 class="section-form__title mt-6 mb-12 lg:mt-12 lg:mb-24" v-html="data.title"></h2>
         </div>
         <div class="relative partner__slider--block">
-          <swiper-container ref="ourPartnersSlider" init="false" class="credit__slider partner__slider flex gap-4 mb-36">
+          <swiper-container ref="ourPartnersSlider" init="false" class="credit__slider partner__slider flex gap-4 mb-12 lg:mb-36">
             <swiper-slide
               v-for="(slide, idx) in data.partnersList"
               :key="idx" class="w-full">

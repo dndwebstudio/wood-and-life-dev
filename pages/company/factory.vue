@@ -16,7 +16,7 @@
     <SectionHousesInterior :data="slides" />
     <SectionInfoSimple class="techData2" id="technologies" :data="techData2">
       <template #desc>
-        <p class="lg:pt-[64px] pt-[0]" style="margin-right: -30px;">
+        <p class="lg:pt-[64px] pt-[0]" style="">
           <b class="text-[32px] leading-9 font-medium lg:text-[32px]">Закупаем сырье большими партиями и в<br/>
              межсезонье, что позволяет оптимизировать<br/>
              себестоимость готовой продукции</b><br/><br/> <div class="lg:pt-[48px] pt-[0]" style="font-size: 24px; padding-bottom: 24px;">Повышение эффективности использования оборудования       </div></p>
@@ -27,7 +27,7 @@
                 <path d="M12 5.83447L17 10.8345L12 15.8345" stroke="#838383"/>
                 </svg>
               </div>
-              <div style="margin-right: -83px;width: 100%;"><p class="lg:text-[16px] ">Использование специализированных инструментов и оборудования значительно ускоряет <br>
+              <div style="width: 100%;"><p class="lg:text-[16px] ">Использование специализированных инструментов и оборудования значительно ускоряет <br>
                       процесс обработки древесины и снижает затраты на труд</p></div>
             </div>
         </template>

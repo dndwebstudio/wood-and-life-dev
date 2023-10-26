@@ -1,7 +1,9 @@
 <template>
   <section class="section-prod">
     <div class="container">
-      <PartSectionName name="Производство" />
+      <!-- <PartSectionName name="Производство" /> -->
+      
+      <HeaderContainer :title="'О компании'"/>
       <div class="section-prod__flex-block">
         <div class="section-prod__text-block">
           <div class="section-prod__quote">
@@ -54,6 +56,7 @@
 </template>
 
 <script setup lang="ts">
+import HeaderContainer from "~/components/Ui/HeaderContainer.vue";
 import ModuleProductionForm from "~/components/Module/ModuleProductionForm.vue";
 import ProductionAdvantages from "~/components/Part/Production/productionAdvantages.vue";
 import ProductionBath from "~/components/Part/Production/productionBath.vue";
