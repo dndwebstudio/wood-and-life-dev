@@ -1,7 +1,7 @@
 <template>
   <section class="pb-2 lg:pb-48 pt-20 lg:pt-48 form-houses">
     <div class="container">
-      <h2 data-v-eae7218d="" class="h2 info-simple__title mb-48" >Вы получите готовый дом через <br/> 2–3 месяца — заезжайте и живите</h2>
+      <h2 data-v-eae7218d="" class="h2 info-simple__title mb-12" >Вы получите готовый дом через <br/> 2–3 месяца — заезжайте и живите</h2>
       <div class="grid grid-cols-6 gap-24">
         <img class="col-span-6 lg:col-span-4" src="/img/modular-houses/form-img.png" alt="">
         <div class="col-span-6 lg:col-span-2">
