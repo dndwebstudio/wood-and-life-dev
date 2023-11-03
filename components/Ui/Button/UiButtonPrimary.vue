@@ -57,7 +57,7 @@ const handlerRouter = () => {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss" >
 .btn {
   padding: 2.55rem 4.8rem;
   display: inline-flex;

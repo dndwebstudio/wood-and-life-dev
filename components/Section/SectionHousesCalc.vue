@@ -2,7 +2,7 @@
   <section class="pt-48 pb-48 bg-[url('/img/modular-houses/bg-green.png')] bg-cover">
     <div class="container section-house-calc--container">
       <div data-v-11a8998c=""  class="caps-1 section-name !text-white opacity-50 section-house-calc--calc" v-html="data.section"></div>
-      <div class="grid lg:grid-cols-6">
+      <div class="grid lg:grid-cols-6 overflow-hidden">
         <div class="w-full col-span-2 section-house-calc--head">
           <svg width="72" height="73" viewBox="0 0 72 73" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g filter="url(#filter0_b_806_18637)">
@@ -69,6 +69,17 @@ defineProps<Props>();
   .section-house-calc--calc{
     padding-right: 1.2rem!important;
     padding-left: 1.2rem!important;
+  }
+}
+.section-name {
+  font-size: 18px;
+  margin-bottom: 6.4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--gray-400);
+  letter-spacing: 0.06em;
+  @include r($md) {
+    margin-bottom: 4rem;
   }
 }
 </style>

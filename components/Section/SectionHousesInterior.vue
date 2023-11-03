@@ -6,7 +6,7 @@
         <div class="w-full">
           <h2 class="section-form__title mt-6 mb-12 lg:mt-12 lg:mb-24" v-html="data.title"></h2>
         </div>
-        <div class="relative partner__slider--block">
+        <div class="relative partner__slider--block" v-if="data.partnersList">
           <swiper-container ref="ourPartnersSlider" init="false" class="credit__slider partner__slider flex gap-4 mb-12 lg:mb-36">
             <swiper-slide
               v-for="(slide, idx) in data.partnersList"

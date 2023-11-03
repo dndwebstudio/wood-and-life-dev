@@ -82,8 +82,10 @@ onMounted(() => {
     },
   };
 
+  if(!!creditSlider.value){
   Object.assign(creditSlider.value, params);
   creditSlider.value.initialize();
+  }
 });
 </script>
 

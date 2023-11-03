@@ -26,7 +26,7 @@ defineEmits<{
 }>();
 </script>
 
-<style scoped lang="scss">
+<style lang="scss">
 .textarea {
   padding: 1.6rem;
   width: 100%;

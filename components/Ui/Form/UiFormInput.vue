@@ -57,7 +57,7 @@ const onFocus = async () => {
 };
 </script>
 
-<style scoped lang="scss">
+<style  lang="scss">
 .input-wrap {
   display: inline-flex;
   color: #fff;

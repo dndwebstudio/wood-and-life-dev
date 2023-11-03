@@ -31,7 +31,7 @@ const props = defineProps<Props>();
 const activeTab = shallowRef(props.currentTab);
 </script>
 
-<style scoped lang="scss">
+<style lang="scss">
 .form-communication {
   max-width: 48rem;
   @include r($md) {

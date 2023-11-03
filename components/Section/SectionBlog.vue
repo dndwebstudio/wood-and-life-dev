@@ -11,7 +11,7 @@
                     :url="item.url" 
                     />
             </div>
-            <Pagination :viewCountBorder="1" :pageLast="25"/>
+            <Pagination :viewCountBorder="2" :pageLast="25"/>
         </div>
     </section>
 </template>

@@ -1,7 +1,7 @@
 <template>
   <div class="prod-bath">
     <h2 class="h2" v-html="data.title" />
-    <div class="prod-bath__cols">
+    <div class="prod-bath__cols mb-10 sm:mb-0">
       <div class="prod-bath__col prod-bath__col_left">
         <p class="prod-bath__subtitle" v-html="data.subtitle" />
         <ul class="prod-bath__fact-list">

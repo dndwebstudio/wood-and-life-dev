@@ -158,7 +158,7 @@ const handleSubmit = async () => {
 
 </script>
 
-<style scoped lang="scss">
+<style  lang="scss">
 .simple-form {
   padding: 6.4rem;
   background-color: var(--gray-700);

@@ -3,7 +3,6 @@
     <div class="container">
       <!-- <PartSectionName name="Производство" /> -->
       
-      <HeaderContainer :title="'О компании'"/>
       <div class="section-prod__flex-block">
         <div class="section-prod__text-block">
           <div class="section-prod__quote">

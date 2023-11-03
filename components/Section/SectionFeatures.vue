@@ -1,7 +1,7 @@
 <template>
   <section class="features">
     <div class="container">
-      <div class="mb-24 text-[#838383] text-3xl font-bold uppercase features--title" v-html="data.section"></div>
+      <div class="mb-24 text-[#838383] text-2xl font-bold uppercase features--title" v-html="data.section"></div>
       <h2 class="h2 features__title" v-html="data.title" />
       <div class="features__content">
         <PartFeature :data="data.features[0]" class="features__feature features__feature_main" />
@@ -99,7 +99,7 @@ defineProps({
   }
   @media screen and (max-width: 767px) {
     .features--title{
-      font-size: 1.5rem;
+      font-size: 1.1rem;
     }
   }
 }

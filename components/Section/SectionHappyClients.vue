@@ -1,6 +1,6 @@
 <template>
     <section class="global">
-      <div class="container overflow-hidden">
+      <div class="container overflow-hidden !mt-12 lg:mt-0">
         <div class="flex gap-16 lg:pb-[200px] pb-[0px] flex-col-reverse lg:flex-row items-center">
           <img class="sm:translate-x-[224px] sm:-translate-y-[109px] lg:translate-x-0 lg:-translate-y-0 translate-x-[67px] translate-y-[31px]" src="/img/global/map.png" alt="">
           <div class="flex flex-col z-0 lg:mb-0 -mb-[368px] ">

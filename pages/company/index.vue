@@ -1,5 +1,6 @@
 <template>
   <div>
+      <HeaderContainer :title="'О компании'"/>
     <SectionProduction id="production" :data="productionData" />
     <SectionHappyClients/>
     <LazySectionMap :data="mapData" :shops="mapData.shops" />
@@ -8,6 +9,7 @@
 </template>
 
 <script setup lang="ts">
+import HeaderContainer from "~/components/Ui/HeaderContainer.vue";
 import SectionHappyClients from "~/components/Section/SectionHappyClients.vue";
 import { ref } from "vue";
 

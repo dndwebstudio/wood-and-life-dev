@@ -1,6 +1,6 @@
 <template>
   <div class="header-nav">
-    <div class="container-fluid">
+    <div class="container-fluid" v-if="$route.fullPath && !$route.fullPath.includes('/home')">
       <div class="header-nav__content">
         <ul class="header-nav__list">
           <li v-for="item in nav" :key="item.name" class="header-nav__item">

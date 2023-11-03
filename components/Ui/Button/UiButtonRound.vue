@@ -23,7 +23,7 @@ interface Props {
 defineProps<Props>();
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss" >
 .btn-round {
   position: relative;
   width: 7.2rem;
