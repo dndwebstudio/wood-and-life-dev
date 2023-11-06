@@ -3,7 +3,7 @@
     <div class="container">
       <div class="faq__wrap">
         <h2 class="h2 faq__title">Ответы на частые вопросы</h2>
-        <div class="faq__content flex-col lg:lex-row">
+        <div class="faq__content flex-col lg:flex-row xl:flex-row">
           <div class="faq__list">
             <PartFAQItem
               v-for="(item, idx) in data.faqs"
@@ -62,9 +62,9 @@ defineProps<Props>();
 
   &__content {
     display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    gap: 24px;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 185px;
   }
 
   &__list {
