@@ -95,7 +95,7 @@ const deatilData = ref<DetailBlogData>({
 							<span class="text-[16px] xl:text-[18px] leading-[19px] xl:leading-[21px]">Если вы раздумываете, нужна ли вам на участке купель с подогревом, то эту
 								статью я пишу именно для вас. Расскажу про свой опыт использования деревянной купели из
 								кедра на даче и поделюсь рекомендациями по выбору лучшей модели.</span>`,
-			addedClass: "text-4xl"
+			addedClass: "text-4xl xl:pb-[80px] xl:mt-[80px] lg:pb-[120px] lg:mt-[120px] pb-[60px] mt-[60px]"
 		},
 		{
 			title: `Какая купель лучше деревянная или пластиковая и почему?`,
@@ -116,7 +116,7 @@ const deatilData = ref<DetailBlogData>({
 							оценивать рационально, то имеет смысл совместить: пластиковую ёмкость сделать вставкой в
 							деревянную обкладку. Скамеечки, трапик также поставить деревянные. Цены неплохие модели
 							начинаются от 70000 рублей.</span>`,
-			addedClass: "text-3xl"
+			addedClass: "text-3xl xl:pb-[80px] xl:mt-[80px] lg:pb-[120px] lg:mt-[120px] pb-[60px] mt-[60px]"
 		},
 		{
 			title: `Какую печь для купели выбрать — внешнюю или погружную?`,
@@ -136,7 +136,7 @@ const deatilData = ref<DetailBlogData>({
 							<span class="text-[16px] xl:text-[18px] leading-[19px] xl:leading-[21px]">По времени топить одинаково: наша стандартная конусовидная купель объёмом около 2300 л
 							нагревается примерно 3 часа при окружающей температуре -15 градусов. Летом нагрев сокращается до
 							1,5 часов.</span>`,
-			addedClass: "text-3xl"
+			addedClass: "text-3xl xl:pb-[80px] xl:mt-[80px] lg:pb-[120px] lg:mt-[120px] pb-[60px] mt-[60px]"
 		},
 		{
 			title: `Какая купель лучше: кедр, дуб или лиственница?`,
@@ -157,7 +157,7 @@ const deatilData = ref<DetailBlogData>({
 									У дуба самая высокая плотность, а значит дубовая купель меньше подвержена усыханию и
 									разбуханию. Это, конечно, очень хорошо. Но и цена соответствует. </li>
 							</ul>`,
-			addedClass: "text-3xl"
+			addedClass: "text-3xl xl:pb-[80px] xl:mt-[80px] lg:pb-[120px] lg:mt-[120px] pb-[60px] mt-[60px]"
 		},
 		{
 			title: `Какая температура воды нужна для купания зимой?`,
@@ -171,7 +171,7 @@ const deatilData = ref<DetailBlogData>({
 									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 									allowfullscreen></iframe>
 							</div>`,
-			addedClass: "text-3xl"
+			addedClass: "text-3xl xl:pb-[80px] xl:mt-[80px] lg:pb-[120px] lg:mt-[120px] pb-[60px] mt-[60px]"
 		},
 		{
 			title: `Как долго остывает?`,
@@ -195,7 +195,7 @@ const deatilData = ref<DetailBlogData>({
 									</div>
 								</div>
 							</div>`,
-			addedClass: "text-3xl"
+			addedClass: "text-3xl xl:pb-[80px] xl:mt-[80px] lg:pb-[120px] lg:mt-[120px] pb-[60px] mt-[60px]"
 		},
 		{
 			title: `Как часто нужно менять воду в
@@ -206,14 +206,14 @@ const deatilData = ref<DetailBlogData>({
 							<br />
 							<br />
 							Моя купель наполняется примерно за 2 часа.</div>`,
-			addedClass: "text-3xl mt-[32px]"
+			addedClass: "text-3xl xl:pb-[80px] xl:mt-[80px] lg:pb-[120px] lg:mt-[120px] pb-[60px] mt-[60px]"
 		},
 		{
 			title: `Можно ли топить углём?`,
 			text: `<div class="text-[28px] xl:text-[64px] lg:text-[46px] leading-[31px] xl:leading-[64px] lg:leading-[50px] font-medium pb-16">Можно ли топить печь для купели углём?</div>
 							Честно говоря, о таком не слышал. Знаю, что есть газовые печи. В принципе, наверное, можно и
 							углём попробовать. Если у вас есть такой опыт — поделитесь со мной в комментариях, пожалуйста.`,
-			addedClass: "text-3xl mt-[32px]"
+			addedClass: "text-3xl xl:pb-[80px] xl:mt-[80px] lg:pb-[120px] lg:mt-[120px] pb-[60px] mt-[60px]"
 		},
 		{
 			title: `Нужен ли фундамент для купели на
@@ -243,7 +243,7 @@ const deatilData = ref<DetailBlogData>({
 							купелью может образоваться грибок или плесень. Однако, благодаря стекловолокну, из которого
 							изготовлены наши купели, ничего страшного не произойдёт и от плесени и грибка достаточно легко
 							избавиться. Поэтому зазор под купелью – лишь рекомендация.`,
-			addedClass: "text-3xl mt-[32px]",
+			addedClass: "text-3xl xl:pb-[80px] xl:mt-[80px] lg:pb-[120px] lg:mt-[120px] pb-[60px] mt-[60px]",
 			images: [
 				"/img/blog-detail/4.png",
 				"/img/blog-detail/5.png",
@@ -271,7 +271,7 @@ const deatilData = ref<DetailBlogData>({
 							<br />
 							Рекомендую приобрести крышку или тент — так летом вода дольше остаётся чистой, а зимой будет
 							надёжная защита от снега.`,
-			addedClass: "text-3xl"
+			addedClass: "text-3xl xl:pb-[80px] xl:mt-[80px] lg:pb-[120px] lg:mt-[120px] pb-[60px] mt-[60px]"
 		}
 	]
 })
