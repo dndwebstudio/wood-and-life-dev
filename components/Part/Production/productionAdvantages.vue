@@ -27,7 +27,7 @@
     <div class="container">
       <div class="prod-advantages_about-baths">
         <p class="prod-advantages_baths-title">Мощности производства позволяют нам в согласованные сроки, без срывов и форс- мажоров, производить бани-бочки и строения жилого и хозяйственного назначения из дерева</p>
-        <div class="prod-advantages_baths-img">
+        <div class="prod-advantages_baths-img md:scale-100 scale-50">
           <nuxt-icon name="bath-type-1" filled />
           <nuxt-icon name="bath-type-2" filled />
           <nuxt-icon name="bath-type-3" filled />

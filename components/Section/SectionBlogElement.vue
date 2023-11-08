@@ -2,12 +2,16 @@
     <div class="">
         <div>
             <!-- <img class="w-full mb-8" :src="img" alt=""> -->
+            <NuxtLink :to="url" class="flex gap-4 items-center">
             <div class="w-full mb-8 section-blog_image" :style="{backgroundImage:'url('+img+')'}"></div>
+        </NuxtLink>
         </div>
+        <NuxtLink :to="url" class="flex gap-4 items-center">
         <div class="font-medium text-3xl sm:text-5xl mb-8">
             {{ title }}
         </div>
-        <NuxtLink :to="url" class="flex gap-4 items-center">
+    </NuxtLink>
+    <NuxtLink :to="url" class="flex gap-4 items-center">
             <span class="font-medium text-[#838383] uppercase text-1xl" style="font-size: 1.2rem;">Читать</span>
             <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M2.33203 4.22241L2.33203 6.22241C2.33203 8.43155 4.12289 10.2224 6.33203 10.2224L17.332 10.2224"

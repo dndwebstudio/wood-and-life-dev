@@ -27,7 +27,7 @@
                                     d="M6.33203 20.3336V21.3336C6.33203 22.4382 7.22746 23.3336 8.33203 23.3336H17.332C18.4366 23.3336 19.332 22.4382 19.332 21.3336V20.3336"
                                     stroke="#009767" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
-                            <span class="text-center">{{item.city}}</span>
+                            <span class="text-center leading-7">{{item.city}}</span>
                         </div>
                         <div class="flex justify-center items-center flex-col border-r border-[#E3E3E3]">
                             <svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">

@@ -19,7 +19,7 @@
         <p class="lg:pt-[64px] pt-[0]" style="">
           <b class="text-[32px] leading-9 font-medium lg:text-[32px]">Закупаем сырье большими партиями и в<br/>
              межсезонье, что позволяет оптимизировать<br/>
-             себестоимость готовой продукции</b><br/><br/> <div class="lg:pt-[48px] pt-[0]" style="font-size: 24px; padding-bottom: 24px;">Повышение эффективности использования оборудования       </div></p>
+             себестоимость готовой продукции</b><div class="lg:pt-[48px] pt-[0]" style="font-size: 24px; padding-bottom: 24px;">Повышение эффективности использования оборудования       </div></p>
             <div class="flex gap-4 text-[16px] leading-[19px]">
               <div>
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
@@ -57,6 +57,7 @@ const techData = ref({
 });
 
 const advantagesData1 = ref({
+  title: "Изготавливаем с точность до <br> десятых долей миллиметра",
   advantages: [
     {
       // icon: "heating-time",

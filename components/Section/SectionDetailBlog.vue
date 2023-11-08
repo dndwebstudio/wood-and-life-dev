@@ -11,7 +11,7 @@
         <div>
             <div v-for="(item, ind) in descriptionPath" :key="ind" class="relative">
                 <span :id="'detail-blog-description-path-' + ind" class="absolute" style="top: -116px"></span>
-                <div class="pb-48" :class="item.addedClass" v-html="item.text"></div>
+                <div class="" :class="item.addedClass" v-html="item.text"></div>
                 <SectionDetailBlogImages v-if="item.images" :images-list="item.images"/>
             </div>
             <ModuleSocialShare :url="'http://localhost:3000/company/blogDetail#detail-blog-description-path-4'"
