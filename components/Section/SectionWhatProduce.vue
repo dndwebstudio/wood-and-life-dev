@@ -53,10 +53,10 @@
             <div class="flex flex-col lg:flex-row flex-row gap-16">
                 <div v-for="(item, ind) in otherItems" :key="ind" :style="{backgroundImage: `url(${item.img})`}"
                     class="lg:basis-1/3 bg-cover h-[320px] lg:h-[670px] w-full p-8 lg:p-16 text-white flex flex-col justify-end bg-center">
-                    <div class="text-5xl md:text-7xl mb-10 md:mb-2" v-html="item.title"></div>
-                    <div class="mb-10 text-2xl md:text-4xl " v-html="item.description"></div>
+                    <div class="text-5xl md:text-5xl mb-10 md:mb-2" v-html="item.title"></div>
+                    <div class="mb-6 text-2xl md:text-2xl " v-html="item.description"></div>
                     <button
-                        class="w-fit text-lg md:text-xl lg:text-4xl font-semibold flex gap-6 items-center border rounded-full border-white px-6 py-3 md:px-8 md:py-4 lg:px-16 lg:py-8">
+                        class="w-fit text-sm md:text-xl  flex items-center h-[52px] uppercase lg:text-2xl font-bold flex gap-6 items-center border rounded-full border-white px-6  md:px-8 lg:px-16">
                         Подробнее
                         <span class="nuxt-icon">
                             <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">

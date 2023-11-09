@@ -394,7 +394,7 @@ const featuresData = ref({
       ],
       banner: {
         title:
-            "Срок службы строений более<br> <span class='text-5xl mt-2 flex'>30-50 лет</span>",
+            "Срок службы строений более<br> <span class='text-7xl font-medium mt-2 flex'>30-50 лет</span>",
         img: "/img/elements/bath.svg",
         icon: "",
       },

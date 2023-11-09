@@ -1,5 +1,5 @@
 <template>
-  <div ref="content" class="feature">
+  <div ref="content" class="feature" v-if="data.title">
     <div class="feature__col feature__col_imgs">
       <div v-for="(img, idx) in data.imgs" :key="idx" class="feature__img">
         <img :src="img.img" alt="" format="webp" loading="lazy" />

@@ -37,7 +37,7 @@ defineProps({
 
 <style scoped lang="scss">
 .features {
-  padding: 12rem 0;
+  padding: 120px 0 64px 0;
   color: #fff;
   background-color: var(--bg-color);
 
