@@ -9,6 +9,7 @@
     <SectionChoose :data="choose" />
     <SectionHappyClients/>
     
+    <LazySectionMap :data="mapData" :shops="mapData.shops" />
     <section class="">
         <div class="container">
           <SectionCallback/>

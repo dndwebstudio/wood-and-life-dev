@@ -4,7 +4,7 @@
       <h2 class="h2 info-simple__title mb-6" v-html="data.title"></h2>
       <p class="text-4xl mb-24" v-html="data.desc"></p>
       <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-5 gap-16">
-        <div class="relative" v-for="(choose, idx) in data.chooses" :key="idx">
+        <div class="relative section-choose-item" v-for="(choose, idx) in data.chooses" :key="idx">
           <img class="w-full" alt="" :src="choose.img">
           <div class="absolute inset-12 flex items-end text-5xl font-medium text-[#fff]" v-html="choose.title"></div>
         </div>
@@ -37,5 +37,13 @@ defineProps<Props>();
 <style scoped lang="scss">
 .choose {
   background-color: var(--bg-color);
+}
+.section-choose-item{
+  border: 2px solid transparent;
+  transition: 0.3px;
+  cursor: pointer;
+}
+.section-choose-item:hover{
+  border-color: #007550;
 }
 </style>

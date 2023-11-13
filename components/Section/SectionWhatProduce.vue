@@ -11,17 +11,7 @@
                         <div class="text-2xl md:text-4xl leading-normal text-[##ffffffe6]" v-html="item.description"></div>
                     </div>
                     <div class="mt-10 lg:mt-0">
-                        <button
-                            class="text-lg md:text-xl lg:text-4xl font-semibold flex gap-6 items-center border rounded-full border-white px-6 py-3 md:px-8 md:py-4 lg:px-16 lg:py-8">
-                            Подробнее
-                            <span class="nuxt-icon">
-                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M2 4.07812L2 6.07812C2 8.28726 3.79086 10.0781 6 10.0781L17 10.0781" stroke="white"
-                                        stroke-width="2"></path>
-                                    <path d="M13 5.07812L18 10.0781L13 15.0781" stroke="white" stroke-width="2"></path>
-                                </svg>
-                            </span>
-                        </button>
+                        <UiBtnSWP/>
                     </div>
                 </div>
                 <div v-else class="flex flex-col lg:flex-row gap-x-16 flex-shrink">
@@ -34,18 +24,7 @@
                             <div class="text-2xl md:text-4xl leading-normal text-[##ffffffe6] mb-10 lg:mb-20"  v-html="item.description"></div>
                         </div>
                         <div>
-                            <button
-                                class="text-lg md:text-xl lg:text-4xl font-semibold flex gap-6 items-center border rounded-full border-white px-6 py-3 md:px-8 md:py-4 lg:px-16 lg:py-8">
-                                Подробнее
-                                <span class="nuxt-icon">
-                                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M2 4.07812L2 6.07812C2 8.28726 3.79086 10.0781 6 10.0781L17 10.0781"
-                                            stroke="white" stroke-width="2"></path>
-                                        <path d="M13 5.07812L18 10.0781L13 15.0781" stroke="white" stroke-width="2"></path>
-                                    </svg>
-                                </span>
-                            </button>
+                            <UiBtnSWP/>
                         </div>
                     </div>
                 </div>
@@ -55,17 +34,7 @@
                     class="lg:basis-1/3 bg-cover h-[320px] lg:h-[670px] w-full p-8 lg:p-16 text-white flex flex-col justify-end bg-center">
                     <div class="text-5xl md:text-5xl mb-10 md:mb-2" v-html="item.title"></div>
                     <div class="mb-6 text-2xl md:text-2xl " v-html="item.description"></div>
-                    <button
-                        class="w-fit text-sm md:text-xl  flex items-center h-[52px] uppercase lg:text-2xl font-bold flex gap-6 items-center border rounded-full border-white px-6  md:px-8 lg:px-16">
-                        Подробнее
-                        <span class="nuxt-icon">
-                            <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M2 4.07812L2 6.07812C2 8.28726 3.79086 10.0781 6 10.0781L17 10.0781" stroke="white"
-                                    stroke-width="2"></path>
-                                <path d="M13 5.07812L18 10.0781L13 15.0781" stroke="white" stroke-width="2"></path>
-                            </svg>
-                        </span>
-                    </button>
+                    <UiBtnSWP/>
                 </div>
             </div>
         </div>
@@ -73,6 +42,8 @@
 </template>
 
 <script setup lang="ts">
+import UiBtnSWP from '../Ui/Button/UiBtnSWP.vue';
+
 interface Props {
   items: ProduceItem[];
 }
@@ -94,6 +65,7 @@ const otherItems = computed<ProduceItem[]>(() => {
 
     return returnData
 })
+
 </script>
 
 <style></style>

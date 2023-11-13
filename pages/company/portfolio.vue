@@ -120,7 +120,7 @@ const portfolioData = ref({
 	items: [
 		//"Бани-бочки"
 		{
-			img: "/img/factory/1.png",
+			img: ["/img/factory/1.png", "/img/factory/5.png", "/img/factory/6.png"],
 			city: "Нижний новгород",
 			wood: "Ель",
 			size: "2,1х4 м",
@@ -128,7 +128,7 @@ const portfolioData = ref({
 			section: "Бани-бочки"
 		},
 		{
-			img: "/img/factory/7.png",
+			img: ["/img/factory/7.png", "/img/factory/1.png", "/img/factory/6.png"],
 			city: "Новочеркаск",
 			wood: "Пихта",
 			size: "66х99 м",
@@ -136,7 +136,7 @@ const portfolioData = ref({
 			section: "Бани-бочки"
 		},
 		{
-			img: "/img/factory/5.png",
+			img: ["/img/factory/5.png", "/img/factory/7.png", "/img/factory/1.png"],
 			city: "Уфа",
 			wood: "Дуба-дуб",
 			size: "1x1,3 м",
@@ -144,7 +144,7 @@ const portfolioData = ref({
 			section: "Бани-бочки"
 		},
 		{
-			img: "/img/factory/6.png",
+			img: ["/img/factory/6.png", "/img/factory/7.png", "/img/factory/5.png"],
 			city: "Москва",
 			wood: "Баобаб",
 			size: "1x1 м",
@@ -152,7 +152,7 @@ const portfolioData = ref({
 			section: "Бани-бочки"
 		},
 		{
-			img: "/img/factory/8.png",
+			img: ["/img/factory/8.png", "/img/factory/1.png", "/img/factory/6.png"],
 			city: "Ростов-на-дону",
 			wood: "Береза",
 			size: "12x21 м",
@@ -160,7 +160,7 @@ const portfolioData = ref({
 			section: "Бани-бочки"
 		},
 		{
-			img: "/img/factory/5.png",
+			img: ["/img/factory/5.png", "/img/factory/1.png", "/img/factory/6.png"],
 			city: "Уфа",
 			wood: "Дуба-дуб",
 			size: "1x1,3 м",
@@ -168,7 +168,7 @@ const portfolioData = ref({
 			section: "Бани-бочки"
 		},
 		{
-			img: "/img/factory/6.png",
+			img: ["/img/factory/6.png", "/img/factory/5.png", "/img/factory/7.png"],
 			city: "Москва",
 			wood: "Баобаб",
 			size: "1x1 м",
@@ -176,7 +176,7 @@ const portfolioData = ref({
 			section: "Бани-бочки"
 		},
 		{
-			img: "/img/factory/7.png",
+			img: ["/img/factory/7.png", "/img/factory/5.png", "/img/factory/1.png"],
 			city: "Новочеркаск",
 			wood: "Пихта",
 			size: "66х99 м",
@@ -184,7 +184,7 @@ const portfolioData = ref({
 			section: "Бани-бочки"
 		},
 		{
-			img: "/img/factory/5.png",
+			img: ["/img/factory/1.png", "/img/factory/5.png", "/img/factory/6.png"],
 			city: "Уфа",
 			wood: "Дуба-дуб",
 			size: "1x1,3 м",
@@ -193,7 +193,7 @@ const portfolioData = ref({
 		},
 		//Модульные дома
 		{
-			img: "/img/factory/5.png",
+			img: ["/img/factory/5.png", "/img/factory/6.png", "/img/factory/1.png"],
 			city: "Уфа",
 			wood: "Дуба-дуб",
 			size: "1x1,3 м",
@@ -201,7 +201,7 @@ const portfolioData = ref({
 			section: "Модульные дома"
 		},
 		{
-			img: "/img/factory/6.png",
+			img: ["/img/factory/8.png", "/img/factory/7.png", "/img/factory/6.png"],
 			city: "Москва",
 			wood: "Баобаб",
 			size: "1x1 м",
@@ -209,7 +209,7 @@ const portfolioData = ref({
 			section: "Модульные дома"
 		},
 		{
-			img: "/img/factory/7.png",
+			img: ["/img/factory/1.png", "/img/factory/5.png", "/img/factory/6.png"],
 			city: "Новочеркаск",
 			wood: "Пихта",
 			size: "66х99 м",
@@ -217,7 +217,7 @@ const portfolioData = ref({
 			section: "Модульные дома"
 		},
 		{
-			img: "/img/factory/5.png",
+			img: ["/img/factory/5.png", "/img/factory/1.png", "/img/factory/6.png"],
 			city: "Уфа",
 			wood: "Дуба-дуб",
 			size: "1x1,3 м",
@@ -225,7 +225,7 @@ const portfolioData = ref({
 			section: "Модульные дома"
 		},
 		{
-			img: "/img/factory/1.png",
+			img: ["/img/factory/4.png", "/img/factory/5.png", "/img/factory/6.png"],
 			city: "Нижний новгород",
 			wood: "Ель",
 			size: "2,1х4 м",
@@ -233,7 +233,7 @@ const portfolioData = ref({
 			section: "Модульные дома"
 		},
 		{
-			img: "/img/factory/7.png",
+			img: ["/img/factory/6.png", "/img/factory/7.png", "/img/factory/1.png"],
 			city: "Новочеркаск",
 			wood: "Пихта",
 			size: "66х99 м",
@@ -241,7 +241,7 @@ const portfolioData = ref({
 			section: "Модульные дома"
 		},
 		{
-			img: "/img/factory/5.png",
+			img: ["/img/factory/5.png", "/img/factory/7.png", "/img/factory/6.png"],
 			city: "Уфа",
 			wood: "Дуба-дуб",
 			size: "1x1,3 м",
@@ -249,7 +249,7 @@ const portfolioData = ref({
 			section: "Модульные дома"
 		},
 		{
-			img: "/img/factory/6.png",
+			img: ["/img/factory/1.png", "/img/factory/7.png", "/img/factory/6.png"],
 			city: "Москва",
 			wood: "Баобаб",
 			size: "1x1 м",
@@ -257,7 +257,7 @@ const portfolioData = ref({
 			section: "Модульные дома"
 		},
 		{
-			img: "/img/factory/8.png",
+			img: ["/img/factory/8.png", "/img/factory/5.png", "/img/factory/1.png"],
 			city: "Ростов-на-дону",
 			wood: "Береза",
 			size: "12x21 м",
@@ -266,7 +266,7 @@ const portfolioData = ref({
 		},
 		//Беседки
 		{
-			img: "/img/factory/6.png",
+			img: ["/img/factory/5.png", "/img/factory/1.png", "/img/factory/6.png"],
 			city: "Москва",
 			wood: "Баобаб",
 			size: "1x1 м",
@@ -274,7 +274,7 @@ const portfolioData = ref({
 			section: "Беседки"
 		},
 		{
-			img: "/img/factory/8.png",
+			img: ["/img/factory/8.png", "/img/factory/5.png", "/img/factory/6.png"],
 			city: "Ростов-на-дону",
 			wood: "Береза",
 			size: "12x21 м",
@@ -283,7 +283,7 @@ const portfolioData = ref({
 		},
 		//А-фреймы
 		{
-			img: "/img/factory/5.png",
+			img: ["/img/factory/5.png", "/img/factory/1.png", "/img/factory/6.png"],
 			city: "Уфа",
 			wood: "Дуба-дуб",
 			size: "1x1,3 м",
@@ -291,7 +291,7 @@ const portfolioData = ref({
 			section: "А-фреймы"
 		},
 		{
-			img: "/img/factory/1.png",
+			img: ["/img/factory/1.png", "/img/factory/5.png", "/img/factory/6.png"],
 			city: "Нижний новгород",
 			wood: "Ель",
 			size: "2,1х4 м",
@@ -299,7 +299,7 @@ const portfolioData = ref({
 			section: "А-фреймы"
 		},
 		{
-			img: "/img/factory/7.png",
+			img: ["/img/factory/7.png", "/img/factory/8.png", "/img/factory/6.png"],
 			city: "Новочеркаск",
 			wood: "Пихта",
 			size: "66х99 м",
@@ -307,7 +307,7 @@ const portfolioData = ref({
 			section: "А-фреймы"
 		},
 		{
-			img: "/img/factory/5.png",
+			img: ["/img/factory/5.png", "/img/factory/1.png", "/img/factory/6.png"],
 			city: "Уфа",
 			wood: "Дуба-дуб",
 			size: "1x1,3 м",
@@ -316,7 +316,7 @@ const portfolioData = ref({
 		},
 		//Каркасные бани
 		{
-			img: "/img/factory/7.png",
+			img: ["/img/factory/7.png", "/img/factory/5.png", "/img/factory/6.png"],
 			city: "Новочеркаск",
 			wood: "Пихта",
 			size: "66х99 м",
@@ -324,7 +324,7 @@ const portfolioData = ref({
 			section: "Каркасные бани"
 		},
 		{
-			img: "/img/factory/5.png",
+			img: ["/img/factory/5.png", "/img/factory/8.png", "/img/factory/6.png"],
 			city: "Уфа",
 			wood: "Дуба-дуб",
 			size: "1x1,3 м",
@@ -332,7 +332,7 @@ const portfolioData = ref({
 			section: "Каркасные бани"
 		},
 		{
-			img: "/img/factory/6.png",
+			img: ["/img/factory/6.png", "/img/factory/5.png", "/img/factory/8.png"],
 			city: "Москва",
 			wood: "Баобаб",
 			size: "1x1 м",
@@ -340,7 +340,7 @@ const portfolioData = ref({
 			section: "Каркасные бани"
 		},
 		{
-			img: "/img/factory/8.png",
+			img: ["/img/factory/8.png", "/img/factory/5.png", "/img/factory/6.png"],
 			city: "Ростов-на-дону",
 			wood: "Береза",
 			size: "12x21 м",
@@ -348,7 +348,7 @@ const portfolioData = ref({
 			section: "Каркасные бани"
 		},
 		{
-			img: "/img/factory/5.png",
+			img: ["/img/factory/5.png", "/img/factory/7.png", "/img/factory/6.png"],
 			city: "Уфа",
 			wood: "Дуба-дуб",
 			size: "1x1,3 м",
@@ -356,7 +356,7 @@ const portfolioData = ref({
 			section: "Каркасные бани"
 		},
 		{
-			img: "/img/factory/6.png",
+			img: ["/img/factory/6.png", "/img/factory/5.png", "/img/factory/1.png"],
 			city: "Москва",
 			wood: "Баобаб",
 			size: "1x1 м",
@@ -364,7 +364,7 @@ const portfolioData = ref({
 			section: "Каркасные бани"
 		},
 		{
-			img: "/img/factory/7.png",
+			img: ["/img/factory/7.png", "/img/factory/5.png", "/img/factory/6.png"],
 			city: "Новочеркаск",
 			wood: "Пихта",
 			size: "66х99 м",
@@ -373,7 +373,7 @@ const portfolioData = ref({
 		},
 		//Дачные комплексы
 		{
-			img: "/img/factory/1.png",
+			img: ["/img/factory/1.png", "/img/factory/5.png", "/img/factory/6.png"],
 			city: "Нижний новгород",
 			wood: "Ель",
 			size: "2,1х4 м",
@@ -381,7 +381,7 @@ const portfolioData = ref({
 			section: "Дачные комплексы"
 		},
 		{
-			img: "/img/factory/7.png",
+			img: ["/img/factory/7.png", "/img/factory/5.png", "/img/factory/6.png"],
 			city: "Новочеркаск",
 			wood: "Пихта",
 			size: "66х99 м",
@@ -389,7 +389,7 @@ const portfolioData = ref({
 			section: "Дачные комплексы"
 		},
 		{
-			img: "/img/factory/5.png",
+			img: ["/img/factory/5.png", "/img/factory/1.png", "/img/factory/6.png"],
 			city: "Уфа",
 			wood: "Дуба-дуб",
 			size: "1x1,3 м",
@@ -397,7 +397,7 @@ const portfolioData = ref({
 			section: "Дачные комплексы"
 		},
 		{
-			img: "/img/factory/6.png",
+			img: ["/img/factory/6.png", "/img/factory/5.png", "/img/factory/8.png"],
 			city: "Москва",
 			wood: "Баобаб",
 			size: "1x1 м",
@@ -405,7 +405,7 @@ const portfolioData = ref({
 			section: "Дачные комплексы"
 		},
 		{
-			img: "/img/factory/8.png",
+			img: ["/img/factory/8.png", "/img/factory/5.png", "/img/factory/6.png"],
 			city: "Ростов-на-дону",
 			wood: "Береза",
 			size: "12x21 м",
@@ -414,7 +414,7 @@ const portfolioData = ref({
 		},
 		//Гриль-домики
 		{
-			img: "/img/factory/6.png",
+			img: ["/img/factory/6.png", "/img/factory/5.png", "/img/factory/6.png"],
 			city: "Москва",
 			wood: "Баобаб",
 			size: "1x1 м",
@@ -422,7 +422,7 @@ const portfolioData = ref({
 			section: "Гриль-домики"
 		},
 		{
-			img: "/img/factory/8.png",
+			img: ["/img/factory/8.png", "/img/factory/5.png", "/img/factory/6.png"],
 			city: "Ростов-на-дону",
 			wood: "Береза",
 			size: "12x21 м",
@@ -431,7 +431,7 @@ const portfolioData = ref({
 		},
 		//Дома из мини-бруса
 		{
-			img: "/img/factory/1.png",
+			img: ["/img/factory/1.png", "/img/factory/5.png", "/img/factory/6.png"],
 			city: "Нижний новгород",
 			wood: "Ель",
 			size: "2,1х4 м",
@@ -439,7 +439,7 @@ const portfolioData = ref({
 			section: "Дома из мини-бруса"
 		},
 		{
-			img: "/img/factory/7.png",
+			img: ["/img/factory/7.png", "/img/factory/5.png", "/img/factory/6.png"],
 			city: "Новочеркаск",
 			wood: "Пихта",
 			size: "66х99 м",
@@ -447,7 +447,7 @@ const portfolioData = ref({
 			section: "Дома из мини-бруса"
 		},
 		{
-			img: "/img/factory/5.png",
+			img: ["/img/factory/6.png", "/img/factory/5.png", "/img/factory/7.png"],
 			city: "Уфа",
 			wood: "Дуба-дуб",
 			size: "1x1,3 м",
@@ -455,7 +455,7 @@ const portfolioData = ref({
 			section: "Дома из мини-бруса"
 		},
 		{
-			img: "/img/factory/6.png",
+			img: ["/img/factory/1.png", "/img/factory/5.png", "/img/factory/6.png"],
 			city: "Москва",
 			wood: "Баобаб",
 			size: "1x1 м",
@@ -463,7 +463,7 @@ const portfolioData = ref({
 			section: "Дома из мини-бруса"
 		},
 		{
-			img: "/img/factory/8.png",
+			img: ["/img/factory/8.png", "/img/factory/5.png", "/img/factory/6.png"],
 			city: "Ростов-на-дону",
 			wood: "Береза",
 			size: "12x21 м",
@@ -472,7 +472,7 @@ const portfolioData = ref({
 		},
 		//Дома из двойного бруса
 		{
-			img: "/img/factory/6.png",
+			img: ["/img/factory/6.png", "/img/factory/5.png", "/img/factory/7.png"],
 			city: "Москва",
 			wood: "Баобаб",
 			size: "1x1 м",
@@ -480,7 +480,7 @@ const portfolioData = ref({
 			section: "Дома из двойного бруса"
 		},
 		{
-			img: "/img/factory/8.png",
+			img: ["/img/factory/8.png", "/img/factory/5.png", "/img/factory/6.png"],
 			city: "Ростов-на-дону",
 			wood: "Береза",
 			size: "12x21 м",

@@ -1,7 +1,7 @@
 <template>
     <section class="pb-24 lg:pb-48">
         <div class="container">
-            <div class="grid grid-cols-1 sm:grid-cols-4 lg:grid-cols-4 gap-16">
+            <div class="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 gap-16">
                 <SectionBlogElement 
                     v-for="(item, ind) in blogData.items" 
                     :key="ind" 
@@ -17,7 +17,7 @@
 
 <script lang="ts" setup>
 import { ref } from "vue";
-import SectionBlogElement from './SectionBlogElement.vue';
+import SectionBlogElement from './SectionBlogElementShort.vue';
 import Pagination from "~/components/Ui/Pagination.vue"
 
 
