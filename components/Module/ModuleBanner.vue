@@ -52,8 +52,8 @@ const { open: openModalVideo } = useModal({
 
 <style lang="scss">
 .banner .nuxt-icon svg{
-  width: auto;
-  height: auto;
+  width: 100%;
+  height: 100%;
 }
 .banner {
   position: relative;

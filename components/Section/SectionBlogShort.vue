@@ -1,15 +1,10 @@
 <template>
     <section class="pb-24 lg:pb-48">
         <div class="container">
-            <div class="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 gap-16">
-                <SectionBlogElement 
-                    v-for="(item, ind) in blogData.items" 
-                    :key="ind" 
-                    :title="item.title" 
-                    :img="item.img" 
-                    :shortDescription="item.shortDescription" 
-                    :url="item.url" 
-                    />
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:grid-cols-3 gap-16">
+                <SectionBlogElement v-for="(item, ind) in blogData.items" :key="ind" :title="item.title" :img="item.img"
+                    :shortDescription="item.shortDescription" :url="item.url"
+                    :classSet="ind == 0 ? 'col-span-1 md:col-span-2 lg:col-span-1' : 'col-span-1'" />
             </div>
         </div>
     </section>

@@ -1,5 +1,5 @@
 <template>
-    <div class="">
+    <div :class="classSet">
         <div>
             <!-- <img class="w-full mb-8" :src="img" alt=""> -->
             <NuxtLink :to="url" class="flex gap-4 items-center">
@@ -28,12 +28,14 @@ interface Props {
     img: string;
     shortDescription?: string;
     url: string;
+    classSet: string;
 }
 const props = withDefaults(defineProps<Props>(), {
     title: "",
     img: "",
     shortDescription: "",
     url: "",
+    classSet: "",
 });
 </script>
 <style>

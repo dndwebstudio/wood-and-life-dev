@@ -1,7 +1,7 @@
 <template>
   <div class="wrapper">
     <TheHeader @toggle-overlay="toggleOverlay" />
-    <main class="main">
+    <main class="main overflow-hidden">
       <slot />
     </main>
     <BaseOverlay :is-active="isOverlayActive" />
