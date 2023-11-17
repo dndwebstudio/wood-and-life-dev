@@ -2,7 +2,7 @@
     <div class="bg-white col-span-4 w-full py-16 px-10 sm:py-20 pb-20 shrink-1" v-if="showModule">
         <ModulCalcAltSteps :step="currentStep" :maxStep="maxStep"/>
         <div class="text-6xl font-medium mb-16" v-if="quizItem">
-            <div class="mb-12" v-html="quizItem.title"></div>
+            <div class="mb-12" v-html="quizItem.title" v-if="quizItem.type != 'form'"></div>
             <div class="flex flex-row flex-wrap lg:flex-nowrap gap-12" v-if="quizItem.type == 'img'">
                 <div class="mca--item relative cursor-pointer" v-for="(content, ind) in quizItem.content" :key="ind" @click="changeActiveElementQuiz(ind)">
                     <nuxt-icon v-if="content.active" class="calc__icon" :name="'quiz-check-enable'" filled />
@@ -23,8 +23,16 @@
                     </div>
                 </div>
             </div>
+            <div class="flex flex-col flex-nowrap" v-else-if="quizItem.type == 'form'" style="
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                ">
+                <ModalFormAlt :form-name="formData.formName" :suptitle="formData.suptitle" :title="formData.title" :subtitle="formData.subtitle" :btn-name="formData.btnName"
+                    :policy-link="formData.policyLink" :success-modal="formData.successModal" @disableStepBlock="disableStepBlock"/>
+            </div>
         </div>
-        <ModulCalcAltChangeSteps :step="currentStep" :maxStep="maxStep" @changeStep="changeStep"/>
+        <ModulCalcAltChangeSteps v-if="!showStepBlock" :step="currentStep" :maxStep="maxStep" @changeStep="changeStep"/>
     </div>
 </template>
 
@@ -32,6 +40,21 @@
 import ModulCalcAltSteps from "~/components/Module/ModulCalcAltSteps.vue"
 import ModulCalcAltChangeSteps from "~/components/Module/ModulCalcAltChangeStep.vue"
 import { ref, computed, reactive } from "vue";
+
+import ModalFormAlt from "../Modal/ModalFormAlt.vue";
+
+interface DataForModal {
+  formName: string;
+  suptitle?: string;
+  title?: string;
+  subtitle?: string;
+  btnName: string;
+  policyLink: string;
+  successModal?: {
+    title: string;
+    desc: string;
+  };
+}
 
 interface Calculator {
   title: string;
@@ -51,15 +74,30 @@ interface Props {
   calculators: Quiz[];
 }
 
+let formData = ref<DataForModal>({
+    formName: "Рассчитать стоимость",
+    suptitle: "Оставьте свой номер",
+    title:
+      "Получите детальный расчет стоимости бани, которая подойдет именно вам",
+    subtitle: "Какой способ связи вам удобнее?",
+    btnName: "Рассчитать стоимость",
+    policyLink: "#",
+    successModal: {
+      title: "спасибо, мы приняли вашу заявку!",
+      desc: "В течение 30 минут с вами свяжется менеджер, уточнит детали и озвучит стоимость вашей бани.",
+    },
+  })
+
 let props = defineProps<Props>();
 
 
 let currentStep = ref<number>(1)
+let showStepBlock = ref<boolean>(false)
 
 let calculatorObject = reactive<Quiz[]>(props.calculators.map(el => el))
 
 const maxStep = computed<number>(() => {
-    return calculatorObject.length
+    return calculatorObject.length+1
 })
 const showModule = computed<boolean>(() => {
     return maxStep.value > 0
@@ -67,17 +105,29 @@ const showModule = computed<boolean>(() => {
 
 function changeStep(step: number){
     console.log(step);
-    if(step > 0 && step <= calculatorObject.length){
+    if(step > 0 && step <= maxStep.value){
         currentStep.value = step
     }
+}
+function disableStepBlock(){
+    showStepBlock.value = true
 }
 
 
 const quizItem = computed<Quiz | null>(() => {
     let returnData = null
 
+    console.log(currentStep.value);
+    
+
     if(calculatorObject.length > 0 && calculatorObject[currentStep.value-1]){
         returnData = calculatorObject[currentStep.value-1]
+    } else if(calculatorObject.length > 0 && !calculatorObject[currentStep.value-1]) {
+        returnData = <Quiz>{
+            title: "Форма",
+            type: "form",
+            content: []
+        }
     }
 
     return returnData

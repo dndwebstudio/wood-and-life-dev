@@ -1,6 +1,6 @@
 <template>
   <div class="header-nav" :data-href="$route.fullPath">
-    <div class="container-fluid" v-if="$route.fullPath && (!$route.fullPath.includes('/home') && $route.fullPath != '/')">
+    <div class="container-fluid" v-if="$route.fullPath && (!$route.fullPath.includes('/company') && !$route.fullPath.includes('/home') && $route.fullPath != '/')">
       <div class="header-nav__content">
         <ul class="header-nav__list">
           <li v-for="item in nav" :key="item.name" class="header-nav__item">

@@ -1,5 +1,6 @@
 <template>
   <div>
+    <HeaderContainer :title="'Ответы на частые вопросы'" :classString="'text-6xl sm:text-9xl pt-24 '"/>
     <SectionFAQ id="faq" :data="faqData" />
     <SectionChoose :data="choose" />
     <VueVideoPreview ref="videopreview" :data="previewData" />
@@ -10,6 +11,8 @@
 import { ref } from "vue";
 import SectionChoose from "~/components/Section/SectionChoose.vue";
 import VueVideoPreview from "~/components/Module/VueVideoPreview.vue";
+
+import HeaderContainer from "~/components/Ui/HeaderContainer.vue";
 
 const faqData = ref({
   banner: {

@@ -2,7 +2,7 @@
   <section class="faq">
     <div class="container">
       <div class="faq__wrap">
-        <h2 class="h2 faq__title">Ответы на частые вопросы</h2>
+        <!-- <h2 class="text-6xl sm:text-9xl pt-24 pb-20e">Ответы на частые вопросы</h2> -->
         <div class="faq__content flex-col lg:flex-row xl:flex-row">
           <div class="faq__list">
             <PartFAQItem

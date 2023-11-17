@@ -48,6 +48,7 @@
                 {{item.size}}
             </div>
         </div>
+        <div class="p-10 text-[14px]" v-html="item.description"></div>
     </div>
 </template>
 

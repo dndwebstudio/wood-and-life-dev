@@ -3,7 +3,7 @@
         <div class="container">
             <div class="grid grid-cols-3 gap-16 pb-48">
                 <div class="grid col-span-3 lg:col-span-2">
-                    <h4 class="mb-12 text-8xl">Оплата</h4>
+                    <h4 class="text-5xl mb-12 md:text-8xl">Оплата</h4>
                     <div class="text-3xl mb-12">
                         <div class="font-medium mb-6">Наличный расчет</div>
                         <p>Оплачивайте заказ у нас в офисе при заключении договора или онлайн переводом при оформлении
@@ -69,7 +69,7 @@
             </div>
             <div class="grid grid-cols-3 gap-16 pb-48">
                 <div class="grid col-span-3 lg:col-span-2">
-                    <h4 class="mb-12 text-8xl">Доставка</h4>
+                    <h4 class="text-5xl mb-12 md:text-8xl">Доставка</h4>
                     <div class="text-3xl mb-12">
                         <p>
                             Цена на сайте указана без доставки. Она рассчитывается в зависимости от района доставки и

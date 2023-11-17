@@ -1,5 +1,5 @@
 <template>
-  <section class="pb-2 lg:pb-48 pt-20 lg:pt-48 form-houses">
+  <section class="pb-2 lg:pb-48 pt-20 lg:pt-48 form-houses sfm--block">
     <div class="container">
       <h2 data-v-eae7218d="" class="h2 info-simple__title mb-12" >Вы получите готовый дом через <br/> 2–3 месяца — заезжайте и живите</h2>
       <div class="grid grid-cols-6 gap-24">
@@ -14,34 +14,15 @@
             <div class="simple-form__title font-medium" data-v-63f20d4b="">Какой способ связи вам удобен?</div>
             <div class="simple-form__body" data-v-63f20d4b="">
               <div class="form-communication simple-form__tabs" data-v-63f20d4b="" data-v-372cbae0="">
-                <div class="hide-scrollbar form-communication__btns" data-v-372cbae0="">
-                  <button type="button" class="form-communication__btn active text-[9px]" data-v-372cbae0="">
-                    <span class="nuxt-icon nuxt-icon--fill" data-v-372cbae0="">
-                      <svg width="36" height="37" viewBox="0 0 36 37" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.75904 33.1656C12.3614 34.5711 15.1807 35.3278 18.3253 35.3278C28.0843 35.3278 36 27.544 36 17.8143C36 8.08457 28.0843 0.300781 18.3253 0.300781C8.56626 0.300781 0.650602 8.08457 0.650602 17.8143C0.650602 21.1656 1.51807 24.3008 3.14458 26.8954L0 36.3008L9.75904 33.1656ZM15.6705 12.9979L17.3676 11.301L13.9737 7.90667L12.2766 9.60363C8.70795 13.1718 8.70779 18.9574 12.2762 22.5259L14.3189 24.5685C17.812 28.0616 23.4754 28.0616 26.9685 24.5685L28.6656 22.8715L25.2714 19.4774L23.5744 21.1744C21.9558 22.793 19.3316 22.793 17.713 21.1744L15.6703 19.1317C13.9765 17.4379 13.9766 14.6917 15.6705 12.9979Z" fill="white"></path>
-                      </svg>
-                    </span> Звонок
-                  </button>
-                  <button type="button" class="form-communication__btn text-[9px]" data-v-372cbae0="">
-                    <span class="nuxt-icon nuxt-icon--fill" data-v-372cbae0="">
-                      <svg width="36" height="37" viewBox="0 0 36 37" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.75904 33.1656C12.3614 34.5711 15.1807 35.3278 18.3253 35.3278C28.0843 35.3278 36 27.544 36 17.8143C36 8.08457 28.0843 0.300781 18.3253 0.300781C8.56626 0.300781 0.650602 8.08457 0.650602 17.8143C0.650602 21.1656 1.51807 24.3008 3.14458 26.8954L0 36.3008L9.75904 33.1656ZM15.6705 12.9979L17.3676 11.301L13.9737 7.90667L12.2766 9.60363C8.70795 13.1718 8.70779 18.9574 12.2762 22.5259L14.3189 24.5685C17.812 28.0616 23.4754 28.0616 26.9685 24.5685L28.6656 22.8715L25.2714 19.4774L23.5744 21.1744C21.9558 22.793 19.3316 22.793 17.713 21.1744L15.6703 19.1317C13.9765 17.4379 13.9766 14.6917 15.6705 12.9979Z" fill="white"></path>
-                      </svg>
-                    </span> whatsapp
-                  </button>
-                  <button type="button" class="form-communication__btn text-[9px]" data-v-372cbae0="">
-                    <span class="nuxt-icon nuxt-icon--fill" data-v-372cbae0="">
-                      <svg width="38" height="35" viewBox="0 0 38 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M37.6678 0.0761719L0.334473 16.0762L9.66781 20.0762L13.6678 32.0762L20.3345 26.7428L32.3345 34.7428L37.6678 0.0761719Z" fill="white"></path>
-                      </svg>
-                    </span> telegram
-                  </button>
-                </div>
-                <div class="input-wrap form-input mb-2" data-v-372cbae0="" data-v-efb5f00e="">
-                  <input class="input" maxlength="32" name="whatsapp" value="+7" placeholder="WhatsApp" pattern="^\+7 \(\d{3}\) \d{3} \d{2} \d{2}$" required="" data-maska="+7 (###) ### ## ##" data-v-inspector="components/Ui/Form/UiFormInput.vue:4:5" data-v-efb5f00e="" data-maska-value="+7">
-                </div>
-                <div class="input-wrap form-input" data-v-372cbae0="" data-v-efb5f00e="">
-                  <input class="input" maxlength="32" name="whatsapp" value="Имя" placeholder="WhatsApp" pattern="^\+7 \(\d{3}\) \d{3} \d{2} \d{2}$" required="" data-maska="+7 (###) ### ## ##" data-v-inspector="components/Ui/Form/UiFormInput.vue:4:5" data-v-efb5f00e="" data-maska-value="+7">
+                
+                <PartFormCommunicationTabs
+                  v-if="tabs"
+                  class="simple-form__tabs"
+                  :current-tab="currentTab"
+                  :tabs="tabs"
+                />
+                <div class="input-wrap form-input mt-[2.4rem]" data-v-372cbae0="" data-v-efb5f00e="">
+                  <input class="input" maxlength="32" name="whatsapp" value="" placeholder="Имя" >
                 </div>
               </div>
             </div>
@@ -63,14 +44,24 @@
   </section>
 </template>
 
-<script>
-export default {
-  name: "SectionFormModular"
-};
+<script setup lang="ts">
+interface Props {
+  tabs: any[];
+  currentTab: object;
+}
+
+const props = defineProps<Props>();
+
+const activeTab = shallowRef(props.currentTab);
 </script>
 
-<style scoped>
+<style>
 .form-houses {
   border-top: 1px solid var(--gray-200);
+}
+
+.sfm--block .form-communication__btn{
+  font-size: 1.2rem;
+    padding: 1.6rem 1rem;
 }
 </style>

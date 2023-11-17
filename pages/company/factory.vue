@@ -1,5 +1,6 @@
 <template>
   <div class="page--factory">
+    <HeaderContainer :title="'Производство'" :classString="'text-6xl sm:text-9xl pt-24'"/>
     <SectionInfoSimple id="technologies" :data="techData">
       <template #banner>
         <ModuleBanner :data="techData.banner" />
@@ -68,6 +69,7 @@
 
 <script setup lang="ts">
 import { ref } from "vue";
+import HeaderContainer from "~/components/Ui/HeaderContainer.vue";
 
 const techData = ref({
   // sectionName: "Технологии и материалы",

@@ -83,7 +83,7 @@ let produceData = ref<ProduceItem[]>([
   {
     title: 'Бани-бочки',
     description: 'С парной, помывочной, комнатой отдыха и мощной печкой — <br>прогреваются за 20–30 минут',
-    img: '/img/home/img.png',
+    img: '/img/home/imgalt.png',
   },
   {
     title: 'А-фреймы',

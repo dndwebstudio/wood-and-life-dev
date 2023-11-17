@@ -1,6 +1,6 @@
 <template>
   <div>
-      <HeaderContainer :title="'О компании'"/>
+    <HeaderContainer :title="'О компании'" :classString="'text-6xl sm:text-9xl pt-24'"/>
     <SectionProduction id="production" :data="productionData" />
     <SectionHappyClients/>
     <LazySectionMap :data="mapData" :shops="mapData.shops" />

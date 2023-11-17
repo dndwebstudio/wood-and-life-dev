@@ -1,9 +1,9 @@
 <template>
-  <section class="info-simple">
+  <section class="info-simple !pt-20">
     <div class="container">
       <PartSectionName :name="data.sectionName" />
       <div class="info-simple__content">
-        <div class="info-simple__col info-simple__col_right">
+        <div class="info-simple__col info-simple__col_left">
           <img
             class="info-simple__img"
             :src="data.src"
@@ -12,7 +12,7 @@
           />
           <slot name="banner"></slot>
         </div>
-        <div class="info-simple__col info-simple__col_left mt-[0] lg:mt-[104px]">
+        <div class="info-simple__col info-simple__col_left ">
           <div class="info-simple__info">
             <h2 class="h2 info-simple__title text-[64px]" v-html="data.title" />
             <div class="info-simple__desc">
@@ -68,7 +68,7 @@ onMounted(() => {
     padding: 6rem 0;
   }
   @include r($sm) {
-    padding: 4rem 0;
+    // padding: 4rem 0 4rem 0;
   }
 
   &__content {

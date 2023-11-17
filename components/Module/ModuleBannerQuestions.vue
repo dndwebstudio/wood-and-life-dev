@@ -23,13 +23,14 @@
       </p>
     </div>
     <div class="banner-questions__btns">
-      <UiButtonPrimary class="btn_transparent" name="WhatsApp"  />
-      <UiButtonPrimary class="btn_transparent" name="Telegram"  />
+      <UiBtnMBQ :textBtn="'WhatsApp'"/>
+      <UiBtnMBQ :textBtn="'Telegram'"/>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
+import UiBtnMBQ from '../Ui/Button/UiBtnMBQ.vue';
 interface Data {
   avatars: any[];
 }

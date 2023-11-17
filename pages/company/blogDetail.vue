@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<HeaderContainer :title="blogTitle" :classString="'text-[36px] xl:text-[80px] lg:text-[60px] pt-20 pb-20 lg:pt-48 lg:pb-48'" />
+		<HeaderContainer :title="blogTitle" :classString="'text-6xl sm:text-9xl pt-24'" />
 		<section class="">
 			<div class="container">
 				<SectionDetailBlog :detailData="deatilData" />
@@ -99,7 +99,7 @@ const deatilData = ref<DetailBlogData>({
 		},
 		{
 			title: `Какая купель лучше деревянная или пластиковая и почему?`,
-			text: `<div class="text-[28px] xl:text-[64px] lg:text-[46px] leading-[31px] xl:leading-[64px] lg:leading-[50px] font-medium pbpb-16">Купель из пластика или дерева:<br /> плюсы и минусы
+			text: `<div class="text-[28px] xl:text-[64px] lg:text-[46px] leading-[31px] xl:leading-[64px] lg:leading-[50px] font-medium pb-16">Купель из пластика или дерева:<br /> плюсы и минусы
 							</div>
 							<span class="text-[16px] xl:text-[18px] leading-[19px] xl:leading-[21px]"> Конечно, в плане эксплуатации композитная купель выигрывает: надёжная, долговечная, не гниёт, не
 							протекает, да и стоит существенно дешевле — цены начинаются от 25000 рублей. Из минусов: внешний
@@ -132,6 +132,8 @@ const deatilData = ref<DetailBlogData>({
 							<br />
 							<img class="pb-16" src="/img/blog-detail/2.png" alt="">
 							<div class="text-[16px] xl:text-[18px] leading-[19px] xl:leading-[21px]">И для сравнения печь, размещённая внутри:</div>
+							<br />
+							<br />
 							<img class="pb-16" src="/img/blog-detail/3.png" alt="">
 							<span class="text-[16px] xl:text-[18px] leading-[19px] xl:leading-[21px]">По времени топить одинаково: наша стандартная конусовидная купель объёмом около 2300 л
 							нагревается примерно 3 часа при окружающей температуре -15 градусов. Летом нагрев сокращается до

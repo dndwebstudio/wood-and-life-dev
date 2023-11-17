@@ -19,7 +19,7 @@
       </p>
     </template>
   </SectionInfoSimple>
-  <SectionFormModular />
+  <SectionFormModular :current-tab="tabsData.currentTab" :tabs="tabsData.tabs" />
   <SectionInfoSimple id="technologies" :data="techData2">
     <template #banner>
       <ModuleBanner :data="techData2.banner" />
@@ -129,6 +129,26 @@ import SectionFormModular from "~/components/Section/SectionFormModular.vue";
 
 
 
+const tabsData = ref({
+  currentTab: PhoneTab,
+  tabs: [
+    {
+      name: "Звонок",
+      icon: "phone",
+      component: PhoneTab,
+    },
+    {
+      name: "whatsapp",
+      icon: "whatsapp",
+      component: WhatsAppTab,
+    },
+    {
+      name: "telegram",
+      icon: "telegram",
+      component: TelegramTab,
+    },
+  ],
+});
 const techData = ref({
   sectionName: "Что такое модульный дом",
   title:

@@ -500,10 +500,10 @@ const portfolioData = ref({
 	display: none !important;
 }
 
-.section-prod {
-	padding-top: 0 !important;
-	padding-bottom: 0 !important;
-}
+// .section-prod {
+// 	padding-top: 0 !important;
+// 	padding-bottom: 0 !important;
+// }
 
 .section-prod__advantages-list {
 	margin-bottom: 10.4rem;

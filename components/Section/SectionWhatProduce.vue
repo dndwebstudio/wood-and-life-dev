@@ -5,7 +5,7 @@
         </div>
         <div class="flex flex-col gap-y-20">
             <div v-for="(item, ind) in sixTopItems" :key="ind">
-                <div v-if="(ind+1)%2 == 1" class=" bg-cover lg:h-[512px] h-[320px] p-8 lg:p-16 text-white flex lg:flex-row flex-col justify-end lg:justify-between lg:items-end" :style="{backgroundImage: `url(${item.img})`}">
+                <div v-if="(ind+1)%2 == 1" class="bg-center bg-cover lg:h-[512px] sm:h-[515px] h-[260px] p-8 lg:p-16 text-white flex lg:flex-row flex-col justify-end lg:justify-between lg:items-end" :style="{backgroundImage: `url(${item.img})`}">
                     <div>
                         <div class="text-5xl md:text-7xl lg:text-9xl font-medium mb-6" v-html="item.title"></div>
                         <div class="text-2xl md:text-4xl leading-normal text-[##ffffffe6]" v-html="item.description"></div>
@@ -16,7 +16,7 @@
                 </div>
                 <div v-else class="flex flex-col lg:flex-row gap-x-16 flex-shrink">
                     <div class="basis-1/2">
-                        <img class="object-contain w-full" :src="item.img" alt="">
+                        <img class="object-contain w-full h-[260px] sm:h-[395px] lg:h-auto object-cover lg:object-contain" :src="item.img" alt="">
                     </div>
                     <div class="basis-1/2 text-white flex flex-col justify-center">
                         <div class="mt-10 lg:mt-0">

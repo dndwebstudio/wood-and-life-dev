@@ -1,6 +1,6 @@
 <template>
   <div class="blog--page">
-    <HeaderContainer :title="'Блог'"/>
+    <HeaderContainer :title="'Блог'" :classString="'text-6xl sm:text-9xl pt-24 pb-20'"/>
     <SectionBlog/>
     <SectionChoose :data="choose" />
   </div>
