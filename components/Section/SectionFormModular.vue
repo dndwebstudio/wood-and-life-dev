@@ -3,7 +3,7 @@
     <div class="container">
       <h2 data-v-eae7218d="" class="h2 info-simple__title mb-12" >Вы получите готовый дом через <br/> 2–3 месяца — заезжайте и живите</h2>
       <div class="grid grid-cols-6 gap-24">
-        <img class="col-span-6 lg:col-span-4" src="/img/modular-houses/form-img.png" alt="">
+        <img class="col-span-6 lg:col-span-4 w-full" src="/img/modular-houses/form-img.png" alt="">
         <div class="col-span-6 lg:col-span-2">
           <form class="simple-form" data-v-4da383d2="" data-v-63f20d4b="">
             <div class="title text-5xl text-[#fff] font-medium mb-12">Модульный дом 110 м² с просторной террасой</div>

@@ -67,7 +67,7 @@
                     </div>
                 </div>
             </div>
-            <div class="grid grid-cols-3 gap-16 pb-48">
+            <div class="grid grid-cols-3 gap-16 pb-6">
                 <div class="grid col-span-3 lg:col-span-2">
                     <h4 class="text-5xl mb-12 md:text-8xl">Доставка</h4>
                     <div class="text-3xl mb-12">
@@ -101,6 +101,7 @@
                     </div>
                 </div>
             </div>
+            <SectionDetailBlogImages :images-list="galleryImages" :classSet="'grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 pt-16 pb-48 gap-5'"/>
             <SectionCallback/>
 
     </div>
@@ -113,6 +114,14 @@ import { ref } from "vue";
 import { useModal } from "vue-final-modal";
 import ModalForm from "@/components/Modal/ModalForm.vue";
 import SectionCallback from "~/components/Section/SectionCallback.vue";
+import SectionDetailBlogImages from "./SectionDetailBlogImages.vue";
+
+let galleryImages = ref<string[]>([
+				"/img/blog-detail/4.png",
+				"/img/blog-detail/5.png",
+				"/img/blog-detail/6.png",
+				"/img/blog-detail/4.png"
+			])
 
 const { open: openModalInstallments } = useModal({
   component: ModalForm,

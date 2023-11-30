@@ -40,7 +40,7 @@
             </div>
           </div>
           <div class="w-full lg:w-1/2">
-            <img class="max-w-[776px] max-h-[776px] w-full h-full object-cover aspect-square" src="/public/img/factory/img.png" alt="">
+            <img class="max-h-[776px] w-full h-full object-cover aspect-square" src="/public/img/factory/img.png" alt="">
           </div>
         </div>
       </div>

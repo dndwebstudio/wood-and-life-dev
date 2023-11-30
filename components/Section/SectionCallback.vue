@@ -1,6 +1,6 @@
 <template>
     <div class="flex flex-col lg:flex-row mb-20">
-        <img class="w-full max-w-[776px]" src="/img/delivery/banner.png" alt="">
+        <img class="w-full max-w-[776px] 2xl:max-w-[930px]" src="/img/delivery/banner.png" alt="">
         <div class="mt-32">
             <div class="text-6xl lg:text-8xl font-bold mb-16"> Здравствуйте!</div>
             <div class="text-3xl lg:text-5xl font-medium mb-12">Меня зовут Анна, я руководитель отдела продаж <br class="hidden md:inline" />Wood and

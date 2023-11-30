@@ -1,7 +1,8 @@
 <template>
   <section class="faq">
     <div class="container">
-      <div class="faq__wrap">
+      <!-- faq__wrap -->
+      <div class="">
         <!-- <h2 class="text-6xl sm:text-9xl pt-24 pb-20e">Ответы на частые вопросы</h2> -->
         <div class="faq__content flex-col lg:flex-row xl:flex-row">
           <div class="faq__list">
